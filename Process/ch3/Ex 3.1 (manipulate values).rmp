@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="9.9.002">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="9.9.002" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="retrieve" compatibility="9.9.002" expanded="true" height="68" name="Retrieve Golf" width="90" x="45" y="34">
+        <parameter key="repository_entry" value="//Samples/data/Golf"/>
+      </operator>
+      <operator activated="true" class="subprocess" compatibility="9.9.002" expanded="true" height="82" name="Subprocess (outlook)" width="90" x="179" y="34">
+        <process expanded="true">
+          <operator activated="true" breakpoints="before" class="merge" compatibility="9.9.002" expanded="true" height="82" name="Merge" width="90" x="45" y="34">
+            <parameter key="attribute_name" value="Outlook"/>
+            <parameter key="first_value" value="overcast"/>
+            <parameter key="second_value" value="rain"/>
+            <description align="left" color="orange" colored="true" width="126">Merge values in outlook&lt;br&gt;&lt;br&gt;overcast and rain are merged into&lt;br/&gt;overcast_rain</description>
+          </operator>
+          <operator activated="true" breakpoints="before" class="cut" compatibility="9.9.002" expanded="true" height="82" name="Cut" width="90" x="179" y="34">
+            <parameter key="attribute_filter_type" value="single"/>
+            <parameter key="attribute" value="Outlook"/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="nominal"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="file_path"/>
+            <parameter key="block_type" value="single_value"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="single_value"/>
+            <parameter key="invert_selection" value="false"/>
+            <parameter key="include_special_attributes" value="false"/>
+            <parameter key="first_character_index" value="1"/>
+            <parameter key="last_character_index" value="4"/>
+            <description align="left" color="orange" colored="true" width="126">Cut values in outlook&lt;br&gt;&lt;br&gt;Keep only first 4 characters&lt;br&gt;(index 1-4)</description>
+          </operator>
+          <operator activated="true" breakpoints="before" class="replace" compatibility="9.9.002" expanded="true" height="82" name="Replace" width="90" x="313" y="34">
+            <parameter key="attribute_filter_type" value="single"/>
+            <parameter key="attribute" value="Outlook"/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="nominal"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="file_path"/>
+            <parameter key="block_type" value="single_value"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="single_value"/>
+            <parameter key="invert_selection" value="false"/>
+            <parameter key="include_special_attributes" value="false"/>
+            <parameter key="replace_what" value="sunn"/>
+            <parameter key="replace_by" value="  good  "/>
+            <description align="left" color="orange" colored="true" width="126">Replace value in outlook&lt;br&gt;&lt;br&gt;sunn is replaced by &amp;quot; good &amp;quot; --&amp;gt; &lt;br&gt;2 spaces before &amp;amp; after the word</description>
+          </operator>
+          <operator activated="true" breakpoints="before" class="trim" compatibility="9.9.002" expanded="true" height="82" name="Trim" width="90" x="447" y="34">
+            <parameter key="attribute_filter_type" value="single"/>
+            <parameter key="attribute" value="Outlook"/>
+            <parameter key="attributes" value=""/>
+            <parameter key="use_except_expression" value="false"/>
+            <parameter key="value_type" value="nominal"/>
+            <parameter key="use_value_type_exception" value="false"/>
+            <parameter key="except_value_type" value="file_path"/>
+            <parameter key="block_type" value="single_value"/>
+            <parameter key="use_block_type_exception" value="false"/>
+            <parameter key="except_block_type" value="single_value"/>
+            <parameter key="invert_selection" value="false"/>
+            <parameter key="include_special_attributes" value="false"/>
+            <description align="left" color="orange" colored="true" width="126">Trim spaces in outlook</description>
+          </operator>
+          <connect from_port="in 1" to_op="Merge" to_port="example set input"/>
+          <connect from_op="Merge" from_port="example set output" to_op="Cut" to_port="example set input"/>
+          <connect from_op="Cut" from_port="example set output" to_op="Replace" to_port="example set input"/>
+          <connect from_op="Replace" from_port="example set output" to_op="Trim" to_port="example set input"/>
+          <connect from_op="Trim" from_port="example set output" to_port="out 1"/>
+          <portSpacing port="source_in 1" spacing="0"/>
+          <portSpacing port="source_in 2" spacing="0"/>
+          <portSpacing port="sink_out 1" spacing="0"/>
+          <portSpacing port="sink_out 2" spacing="0"/>
+        </process>
+        <description align="left" color="green" colored="true" width="126">Put all operators for outlook in a subprocess</description>
+      </operator>
+      <operator activated="true" breakpoints="before" class="map" compatibility="9.9.002" expanded="true" height="82" name="Map (wind)" width="90" x="313" y="34">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="Wind"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="attribute_value"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="time"/>
+        <parameter key="block_type" value="attribute_block"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_matrix_row_start"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <list key="value_mappings">
+          <parameter key="false" value="no"/>
+          <parameter key="true" value="yes"/>
+        </list>
+        <parameter key="consider_regular_expressions" value="false"/>
+        <parameter key="add_default_mapping" value="false"/>
+        <description align="left" color="orange" colored="true" width="126">Map values in wind&lt;br&gt;&lt;br/&gt;From {false, true}&lt;br&gt;To {no, yes}</description>
+      </operator>
+      <operator activated="true" breakpoints="before" class="map" compatibility="9.9.002" expanded="true" height="82" name="Map (temperature)" width="90" x="447" y="34">
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="Temperature"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="attribute_value"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="time"/>
+        <parameter key="block_type" value="attribute_block"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_matrix_row_start"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <list key="value_mappings">
+          <parameter key="75" value="-5"/>
+        </list>
+        <parameter key="consider_regular_expressions" value="false"/>
+        <parameter key="add_default_mapping" value="false"/>
+        <description align="left" color="orange" colored="true" width="126">Map values in temperature&lt;br&gt;&lt;br&gt;From 75 to -5</description>
+      </operator>
+      <operator activated="true" breakpoints="before" class="set_data" compatibility="9.9.002" expanded="true" height="82" name="Set Data" width="90" x="581" y="34">
+        <parameter key="example_index" value="1"/>
+        <parameter key="count_backwards" value="false"/>
+        <parameter key="attribute_name" value=""/>
+        <list key="additional_values">
+          <parameter key="Humidity" value="95"/>
+          <parameter key="Temperature" value="95"/>
+          <parameter key="Outlook" value="over"/>
+        </list>
+        <description align="left" color="orange" colored="true" width="126">Set new values in record 1 (index = 1)&lt;br/&gt;&lt;br/&gt;humidity = 95&lt;br/&gt;temperature = 95&lt;br/&gt;outlook = over</description>
+      </operator>
+      <connect from_op="Retrieve Golf" from_port="output" to_op="Subprocess (outlook)" to_port="in 1"/>
+      <connect from_op="Subprocess (outlook)" from_port="out 1" to_op="Map (wind)" to_port="example set input"/>
+      <connect from_op="Map (wind)" from_port="example set output" to_op="Map (temperature)" to_port="example set input"/>
+      <connect from_op="Map (temperature)" from_port="example set output" to_op="Set Data" to_port="example set input"/>
+      <connect from_op="Set Data" from_port="example set output" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+    </process>
+  </operator>
+</process>

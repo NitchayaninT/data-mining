@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="9.9.002">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="9.9.002" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="retrieve" compatibility="9.9.002" expanded="true" height="68" name="Retrieve Titanic Training" width="90" x="45" y="34">
+        <parameter key="repository_entry" value="//Samples/data/Titanic Training"/>
+        <description align="left" color="orange" colored="true" width="126">Right-click at the operator to add this note&lt;br/&gt;&lt;br/&gt;Drag data from Samples to here</description>
+      </operator>
+      <connect from_op="Retrieve Titanic Training" from_port="output" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+      <description align="left" color="green" colored="true" height="119" resized="true" width="296" x="167" y="109">Out port is connected to res port in order to complete the workflow (res = show results in Results tab)&lt;br&gt;&lt;br&gt;Run the process and check Results tab&lt;br&gt;</description>
+    </process>
+  </operator>
+</process>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="11.1.001">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="11.1.001" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="retrieve" compatibility="11.1.001" expanded="true" height="68" name="Retrieve Titanic Training" width="90" x="45" y="136">
+        <parameter key="repository_entry" value="//Samples/data/Titanic Training"/>
+      </operator>
+      <operator activated="true" class="write_excel" compatibility="11.1.001" expanded="true" height="103" name="Write Excel" width="90" x="179" y="136">
+        <parameter key="excel_file" value="/Users/ruby/Desktop/MUIC/EGCI425/Process/ch1/data/TitanicExel.xlsx"/>
+        <parameter key="file_format" value="xlsx"/>
+        <enumeration key="sheet_names"/>
+        <parameter key="sheet_name" value="RapidMiner Data"/>
+        <parameter key="date_format" value="yyyy-MM-dd HH:mm:ss"/>
+        <parameter key="number_format" value="#.0"/>
+        <parameter key="encoding" value="SYSTEM"/>
+      </operator>
+      <operator activated="true" class="read_excel" compatibility="10.2.000" expanded="true" height="68" name="Read Excel" width="90" x="313" y="136">
+        <parameter key="excel_file" value="/Users/ruby/Desktop/MUIC/EGCI425/Process/ch1/data/TitanicExel.xlsx"/>
+        <parameter key="sheet_selection" value="sheet number"/>
+        <parameter key="sheet_number" value="1"/>
+        <parameter key="imported_cell_range" value="A1"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="date_format" value=""/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="Age.true.real.attribute"/>
+          <parameter key="1" value="Passenger Class.true.polynominal.attribute"/>
+          <parameter key="2" value="Sex.true.polynominal.attribute"/>
+          <parameter key="3" value="No of Siblings or Spouses on Board.true.integer.attribute"/>
+          <parameter key="4" value="No of Parents or Children on Board.true.integer.attribute"/>
+          <parameter key="5" value="Passenger Fare.true.real.attribute"/>
+          <parameter key="6" value="Survived.true.polynominal.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <operator activated="true" class="advanced_file_connectors:read_arff" compatibility="11.1.001" expanded="true" height="68" name="Read ARFF" width="90" x="313" y="289">
+        <parameter key="data_file" value="/Users/ruby/Downloads/ch1/data/weather.nominal.arff"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+        <list key="data_set_meta_data_information"/>
+        <parameter key="attribute_names_already_defined" value="false"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+      </operator>
+      <connect from_op="Retrieve Titanic Training" from_port="output" to_op="Write Excel" to_port="input"/>
+      <connect from_op="Read Excel" from_port="output" to_port="result 2"/>
+      <connect from_op="Read ARFF" from_port="output" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="147"/>
+      <portSpacing port="sink_result 2" spacing="63"/>
+      <portSpacing port="sink_result 3" spacing="0"/>
+      <description align="left" color="orange" colored="true" height="248" resized="true" width="275" x="18" y="19">Process 1&lt;br&gt;Retrieve data from Samples &amp;amp; write it to Excel file. After running the process, an Excel file is created</description>
+      <description align="left" color="green" colored="true" height="249" resized="true" width="184" x="299" y="19">Process 2&lt;br&gt;Read data from Excel file&lt;br&gt;(use Import Configuration Wizard in Parameters tab)&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Connect to res after Excel&lt;br&gt;file is created by Process 1&lt;br&gt;</description>
+      <description align="left" color="purple" colored="true" height="106" resized="true" width="466" x="17" y="275">Process 3&lt;br&gt;Read ARFF file (from Weka's)&lt;br&gt;Use Parameters tab to set file&lt;br&gt;name and location</description>
+    </process>
+  </operator>
+</process>

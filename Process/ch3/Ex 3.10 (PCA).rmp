@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="9.10.008">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="9.10.008" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="retrieve" compatibility="9.10.008" expanded="true" height="68" name="Retrieve IrisFromWeka" width="90" x="45" y="34">
+        <parameter key="repository_entry" value="data/IrisFromWeka"/>
+      </operator>
+      <operator activated="true" class="select_subprocess" compatibility="9.10.008" expanded="true" height="124" name="Select Subprocess" width="90" x="179" y="34">
+        <parameter key="select_which" value="1"/>
+        <process expanded="true">
+          <operator activated="true" class="principal_component_analysis" compatibility="9.10.008" expanded="true" height="103" name="PCA" width="90" x="45" y="34">
+            <parameter key="dimensionality_reduction" value="keep variance"/>
+            <parameter key="variance_threshold" value="0.95"/>
+            <parameter key="number_of_components" value="1"/>
+          </operator>
+          <connect from_port="input 1" to_op="PCA" to_port="example set input"/>
+          <connect from_op="PCA" from_port="example set output" to_port="output 1"/>
+          <connect from_op="PCA" from_port="original" to_port="output 2"/>
+          <connect from_op="PCA" from_port="preprocessing model" to_port="output 3"/>
+          <portSpacing port="source_input 1" spacing="0"/>
+          <portSpacing port="source_input 2" spacing="0"/>
+          <portSpacing port="sink_output 1" spacing="0"/>
+          <portSpacing port="sink_output 2" spacing="0"/>
+          <portSpacing port="sink_output 3" spacing="0"/>
+          <portSpacing port="sink_output 4" spacing="0"/>
+          <description align="left" color="orange" colored="true" height="125" resized="true" width="271" x="12" y="146">Keep PC's that cover 95% of data variation&lt;br&gt;Or keep required number of PC's&lt;br&gt;&lt;br&gt;exa -&amp;gt; new table with PC's as attribute&lt;br&gt;pre -&amp;gt; preprocessing parameters&lt;br&gt;(weights of PC's and attributes)</description>
+        </process>
+        <process expanded="true">
+          <operator activated="true" class="weight_by_pca" compatibility="9.10.008" expanded="true" height="82" name="Weight by PCA" width="90" x="45" y="34">
+            <parameter key="normalize_weights" value="false"/>
+            <parameter key="sort_weights" value="true"/>
+            <parameter key="sort_direction" value="ascending"/>
+            <parameter key="component_number" value="1"/>
+            <description align="left" color="orange" colored="true" width="126">Use eigenvalues in PC 1 as attribute weights</description>
+          </operator>
+          <operator activated="true" class="select_by_weights" compatibility="9.10.008" expanded="true" height="103" name="Select by PCA" width="90" x="179" y="34">
+            <parameter key="weight_relation" value="top k"/>
+            <parameter key="weight" value="1.0"/>
+            <parameter key="k" value="2"/>
+            <parameter key="p" value="0.5"/>
+            <parameter key="deselect_unknown" value="true"/>
+            <parameter key="use_absolute_weights" value="true"/>
+          </operator>
+          <connect from_port="input 1" to_op="Weight by PCA" to_port="example set"/>
+          <connect from_op="Weight by PCA" from_port="weights" to_op="Select by PCA" to_port="weights"/>
+          <connect from_op="Weight by PCA" from_port="example set" to_op="Select by PCA" to_port="example set input"/>
+          <connect from_op="Select by PCA" from_port="example set output" to_port="output 1"/>
+          <connect from_op="Select by PCA" from_port="weights" to_port="output 2"/>
+          <portSpacing port="source_input 1" spacing="0"/>
+          <portSpacing port="source_input 2" spacing="0"/>
+          <portSpacing port="sink_output 1" spacing="0"/>
+          <portSpacing port="sink_output 2" spacing="0"/>
+          <portSpacing port="sink_output 3" spacing="0"/>
+          <portSpacing port="sink_output 4" spacing="0"/>
+        </process>
+      </operator>
+      <connect from_op="Retrieve IrisFromWeka" from_port="output" to_op="Select Subprocess" to_port="input 1"/>
+      <connect from_op="Select Subprocess" from_port="output 1" to_port="result 1"/>
+      <connect from_op="Select Subprocess" from_port="output 2" to_port="result 2"/>
+      <connect from_op="Select Subprocess" from_port="output 3" to_port="result 3"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+      <portSpacing port="sink_result 3" spacing="0"/>
+      <portSpacing port="sink_result 4" spacing="0"/>
+      <description align="left" color="yellow" colored="false" height="51" resized="true" width="452" x="17" y="173">Subprocess 1 : run PCA to get new attributes which are PC's&lt;br&gt;Subprocess 2 : use weights calculated by PCA to select existing attributes</description>
+    </process>
+  </operator>
+</process>

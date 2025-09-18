@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="10.3.000">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="10.3.000" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="retrieve" compatibility="10.3.000" expanded="true" height="68" name="Retrieve Golf" width="90" x="45" y="34">
+        <parameter key="repository_entry" value="//Samples/data/Golf"/>
+      </operator>
+      <operator activated="true" class="generate_id" compatibility="10.3.000" expanded="true" height="82" name="Generate ID" width="90" x="179" y="34">
+        <parameter key="create_nominal_ids" value="false"/>
+        <parameter key="offset" value="0"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="10.3.000" expanded="true" height="68" name="Retrieve Golf-Testset" width="90" x="45" y="136">
+        <parameter key="repository_entry" value="//Samples/data/Golf-Testset"/>
+      </operator>
+      <operator activated="true" class="generate_id" compatibility="10.3.000" expanded="true" height="82" name="Generate ID (2)" width="90" x="179" y="136">
+        <parameter key="create_nominal_ids" value="false"/>
+        <parameter key="offset" value="4"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="10.3.000" expanded="true" height="68" name="Retrieve IrisFromWeka" width="90" x="179" y="289">
+        <parameter key="repository_entry" value="data/IrisFromWeka"/>
+      </operator>
+      <operator activated="true" class="select_subprocess" compatibility="10.3.000" expanded="true" height="124" name="Select Subprocess" width="90" x="380" y="85">
+        <parameter key="select_which" value="2"/>
+        <process expanded="true">
+          <operator activated="true" class="append" compatibility="9.9.002" expanded="true" height="103" name="Append" width="90" x="45" y="34">
+            <parameter key="datamanagement" value="double_array"/>
+            <parameter key="data_management" value="auto"/>
+            <parameter key="merge_type" value="all"/>
+          </operator>
+          <connect from_port="input 1" to_op="Append" to_port="example set 1"/>
+          <connect from_port="input 2" to_op="Append" to_port="example set 2"/>
+          <connect from_op="Append" from_port="merged set" to_port="output 1"/>
+          <portSpacing port="source_input 1" spacing="0"/>
+          <portSpacing port="source_input 2" spacing="0"/>
+          <portSpacing port="source_input 3" spacing="0"/>
+          <portSpacing port="source_input 4" spacing="0"/>
+          <portSpacing port="sink_output 1" spacing="0"/>
+          <portSpacing port="sink_output 2" spacing="0"/>
+          <description align="left" color="orange" colored="true" height="69" resized="true" width="124" x="27" y="144">Can append only records from Golf &amp;amp; Golf-Testset</description>
+        </process>
+        <process expanded="true">
+          <operator activated="true" class="concurrency:join" compatibility="10.3.000" expanded="true" height="82" name="Join" width="90" x="45" y="34">
+            <parameter key="remove_double_attributes" value="true"/>
+            <parameter key="join_type" value="inner"/>
+            <parameter key="use_id_attribute_as_key" value="true"/>
+            <list key="key_attributes">
+              <parameter key="id" value="id"/>
+            </list>
+            <parameter key="keep_both_join_attributes" value="true"/>
+          </operator>
+          <connect from_port="input 1" to_op="Join" to_port="left"/>
+          <connect from_port="input 2" to_op="Join" to_port="right"/>
+          <connect from_op="Join" from_port="join" to_port="output 1"/>
+          <portSpacing port="source_input 1" spacing="0"/>
+          <portSpacing port="source_input 2" spacing="0"/>
+          <portSpacing port="source_input 3" spacing="0"/>
+          <portSpacing port="source_input 4" spacing="0"/>
+          <portSpacing port="sink_output 1" spacing="0"/>
+          <portSpacing port="sink_output 2" spacing="0"/>
+          <description align="left" color="orange" colored="true" height="142" resized="true" width="238" x="27" y="123">Try joining&lt;br&gt;1. Golf and Golf-Tesset&lt;br&gt;2. Golf and Iris&lt;br&gt;&lt;br&gt;Join uses id for matching&lt;br/&gt;So records with id = 1 in Golf and in Iris are considered the same record&lt;br&gt;</description>
+        </process>
+      </operator>
+      <connect from_op="Retrieve Golf" from_port="output" to_op="Generate ID" to_port="example set input"/>
+      <connect from_op="Generate ID" from_port="example set output" to_op="Select Subprocess" to_port="input 1"/>
+      <connect from_op="Retrieve Golf-Testset" from_port="output" to_op="Generate ID (2)" to_port="example set input"/>
+      <connect from_op="Generate ID (2)" from_port="example set output" to_op="Select Subprocess" to_port="input 2"/>
+      <connect from_op="Retrieve IrisFromWeka" from_port="output" to_op="Select Subprocess" to_port="input 3"/>
+      <connect from_op="Select Subprocess" from_port="output 1" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="21"/>
+      <portSpacing port="sink_result 2" spacing="21"/>
+      <description align="left" color="orange" colored="true" height="250" resized="true" width="270" x="19" y="26">&lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; ID in Golf starts at 1 (offset = 0)&lt;br&gt;ID in Golf-Testset starts at 5 (offset = 4)</description>
+      <description align="left" color="yellow" colored="false" height="56" resized="true" width="153" x="338" y="221">Subprocess 1 : append&lt;br/&gt;Subprocess 2 : join</description>
+    </process>
+  </operator>
+</process>
