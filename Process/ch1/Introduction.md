@@ -8,7 +8,7 @@
 	- **Regression** : predict numeric values
 	- **Algorithms** : decision trees, logistic regressions, random forest, naive bayes
 	
-<img src="DataMining/pictures/Supervised-learning.png" alt="Alt text" width="500" height="300"/>
+<img src="../../pictures/Supervised-learning.png" alt="Alt text" width="500" height="300"/>
 
 - ### Descriptive or Unsupervised Learning
 	- used for analysis
@@ -17,7 +17,7 @@
 	- **Association** : find strongly associated items
 	- **Algorithms** : k-means clustering
 
-<img src="DataMining/pictures/Unsupervised-learning.png" alt="Alt text" width="600" height="250"/>
+<img src="../../pictures/Unsupervised-learning.png" alt="Alt text" width="600" height="250"/>
 
 ## Choosing Data Mining Approach/Method
 - **Variables** : attributes/features in our dataset (eg. male/female, age)
@@ -38,11 +38,11 @@
 ### Ex 1.1 Retrieve
 fetches a dataset from our repository into our process so other operators can work on it
 
-<img src="DataMining/pictures/Retrieve.png" alt="Alt text" width="400" height="200"/>
+<img src="../../pictures/Retrieve.png" alt="Alt text" width="400" height="200"/>
 
 ### 1.2 Read/Write files
 
-<img src="DataMining/pictures/Read-and-write-files.png" alt="Alt text" width="550" height="300"/>
+<img src="../../pictures/Read-and-write-files.png" alt="Alt text" width="550" height="300"/>
 
 **Process 1**
 1. Retrieve : Fetches/retrieves data from Samples folder
