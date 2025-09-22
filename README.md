@@ -1,4 +1,5 @@
 # DataMining⛏
 ## [- Introduction](./Process/ch1/Introduction.md)
-## - Data Exploration
-## - Data Preprocessing
+## - Data Preparation
+- ### [Data Exploration](./Process/ch2/Data%20Exploration.md)
+- ### Data Preprocessing
