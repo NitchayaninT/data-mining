@@ -1,0 +1,120 @@
+## Operations
+- ### Data access
+	- Retrieve
+	- Store
+	- Rename Repository Entry
+	- Copy Repository Entry
+	- Move Repository Entry
+	- Delete Repository Entry
+	- Store to File 
+	- Retrieve From file
+	- Files (folder)
+	- Database (folder)
+	- Applications (folder)
+	- Cloud Storage (folder)
+- ### Blending
+	- Attributes
+	- Examples
+		- Filter
+	- Table
+		- Aggregate
+		- Pivot
+	- Values (folder)
+		- Merge
+		- Cut
+		- Replace
+		- Trim
+		- Map
+		- Add
+		- Split
+- ### Cleansing
+	- Normalization (folder)
+	- Binning (folder)
+	- Missing (folder)
+	- Duplicates (folder)
+	- Outliers (folder)
+	- Dimensionality Reduction (folder)
+	- Statistics
+	- Quality Measures
+- ### Modeling
+	- Predictive (folder)
+		- Lazy
+		- Bayesian
+		- Trees
+		- Rules
+		- Neural Nets
+		- Functions 
+		- Logistic Regression
+		- Support Vector Machines
+		- Discriminant Analysis
+		- Ensembles
+	- Segmentation (folder)
+		- k-means
+		- Support vector clustering
+		- Random clustering
+		- Agglomerative clustering
+		- Top down clustering
+		- Flatten clustering
+		- Extract cluster prototypes
+		- DBSCAN
+		- Cluster model visualizer
+	- Associations (folder)
+	- Correlations (folder)
+	- Similiarities (folder)
+	- Feature Weights (folder)
+		- Weight by Information gain
+		- Weight by information gain ratio
+		- Weight by rule
+		- Weight by Value Average
+		- Weight by Deviation
+		- Weight by Correlation
+		- Weight by Chi squared statistic
+		- Weight by Gini Index
+		- Weight by Tree Importance
+		- Weight by Uncertainty
+		- Weight by Relief
+		- Weight by SVM
+		- Weight by PCA
+		- Weight by Component Model
+		- Weight by User Sepecification
+		- Data to Weights
+		- Weights to Data
+	- Optimization (folder)
+		- Parameters (folder)
+		- Feature Selection (folder)
+			- Forward Selection
+			- Backward Elimination
+			- Optimize Selection
+		- Feature Generation
+		- Feature Weighting
+	- Time Series (folder)
+- ### Scoring
+- ### Validation
+	- Performance (folder)
+		- Predictive (folder)
+			- Performance (Classification)
+			- Performance (Binomial Classification)
+			- Performance (Regression)
+			- Performance (Costs)
+			- Performance (Ranking)
+		- Segmentation (folder)
+			- Cluster Count Performance
+			- Cluster Distance Performance
+			- Cluster Density Performance
+			- Item Distribution Performance
+			- Map Clustering on Labels
+		- Significance Tests (folder)
+		- Performance
+		- Extract Performance
+		- Performance (user-based)
+		- Performance (Min-Max)
+		- Performance to data
+		- Multi Label Performance
+	- Visual (folder)
+	- Cross Validation
+	- Split Validation
+	- Bootstrapping Validation
+	- Wrapper Split Validation
+	- Wrapper-X-Validation
+- ### Utility
+
