@@ -6,7 +6,7 @@
       {
         "id": "10f751d5560024d5",
         "type": "tabs",
-        "dimension": 82.21859706362153,
+        "dimension": 79.61264016309887,
         "children": [
           {
             "id": "e22b16be6d9df7d4",
@@ -14,12 +14,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Process/ch3/Data Preprocessing.md",
+                "file": "Process/ch4/Classification Methods 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Data Preprocessing"
+              "title": "Classification Methods 1"
+            }
+          },
+          {
+            "id": "fe0e44655f789175",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "pictures/testingRecords.png"
+              },
+              "icon": "lucide-image",
+              "title": "testingRecords"
             }
           }
         ]
@@ -27,7 +39,7 @@
       {
         "id": "f121acd8497254db",
         "type": "tabs",
-        "dimension": 17.781402936378466,
+        "dimension": 20.38735983690112,
         "children": [
           {
             "id": "7ffb0c91e3435904",
@@ -35,12 +47,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Rapid Miner.md",
+                "file": "Process/ch2/Data Exploration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rapid Miner"
+              "title": "Data Exploration"
             }
           }
         ]
@@ -53,20 +65,17 @@
     "type": "split",
     "children": [
       {
-        "id": "454936977e2e3196",
+        "id": "f7d8a69fa43fab43",
         "type": "tabs",
         "children": [
           {
-            "id": "8ed5f3a2e348d308",
+            "id": "b6dc06e6ceaab4bd",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           },
           {
@@ -87,20 +96,24 @@
             }
           },
           {
-            "id": "b6dc06e6ceaab4bd",
+            "id": "8ed5f3a2e348d308",
             "type": "leaf",
             "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 231.50260543823242
   },
   "right": {
     "id": "e3d67f66f144d629",
@@ -191,15 +204,26 @@
       "bases:Create new base": false
     }
   },
-  "active": "8ed5f3a2e348d308",
+  "active": "e22b16be6d9df7d4",
   "lastOpenFiles": [
-    "Process/ex1",
-    "Rapid Miner.md",
+    "pictures/TreeToRules.png",
+    "Process/ch4/Classification Methods 1.md",
+    "pictures/coverageSupport.png",
+    "pictures/AccuracyConfidence.png",
+    "pictures/testingRecords.png",
+    "pictures/subtreeEstimatedError.png",
+    "README.md",
+    "pictures/postPruningData.png",
+    "pictures/postPruningTree.png",
+    "pictures/maritalPenalty.png",
+    "Screenshot 2025-10-03 at 14.17.03.png",
+    "pictures/splitPenalty.png",
     "Process/ch2/Data Exploration.md",
+    "Rapid Miner.md",
     "Process/ch3/Data Preprocessing.md",
+    "Process/ex1",
     "Untitled.base",
     "Untitled.canvas",
-    "README.md",
     "Process/ch3.md"
   ]
 }
