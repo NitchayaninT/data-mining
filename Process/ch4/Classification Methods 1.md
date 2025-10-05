@@ -45,7 +45,6 @@ Consider : How to determine the best split?, When to stop growing tree?
 	- Entropy(root) = - 3/10 log (3/10) - 7/10 log (7/10) = 0.8813
 2. Pick the best split (by house, martial or income?), which one gives a higher information gain
 	- **Split by house** : {owner, tenant}
-	
 <img src="../../pictures/GiniEntropyHouse.png" alt="Alt text" width="520" height="150"/> <img src="../../pictures/houseDecisionTree.png" alt="Alt text" width="150" height="150"/>
 
 - Information Gain (Gini) : 0.42 - 0.343 = 0.077
@@ -166,6 +165,7 @@ Thats where a **penalty for making too many splits** comes into play, to balance
 ==**Exhaustive**==
 - A rule set has exhaustive coverage if it accounts for every possible
 combination of attribute values
+- refers to an approach or strategy that **examines all possible patterns, combinations, or subsets of data** to ensure that **no potential pattern or rule is missed**.
 - Otherwise, we won't be able to predict class for some records
 - Fixed by **adding default rule** (if record doesn't satisfy any rule)
 ==**Mutually Exclusive**==
