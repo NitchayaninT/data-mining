@@ -80,6 +80,8 @@ Thats where a **penalty for making too many splits** comes into play, to balance
 - **Reduces the “score”** of a split if it creates too many bins.
 - Forces the algorithm to **stop splitting** unless the gain in information is **worth** the complexity.
 
+### Gain Ratio
+
 ![splitPenalty.png](../../pictures/splitPenalty.png)
 
 **Example : Split Penalty Calculation**
@@ -126,7 +128,16 @@ Thats where a **penalty for making too many splits** comes into play, to balance
 - **Split by D** (max tree size) vs **Split by F** (D's subtree, pruned)
 	- Split by F has a lower error in pessimistic records than split by D 
 	- So, we can conclude that **pruning is better**
-
+*** The **confidence** value in Rapid Miner specifies the **confidence level for the pessimistic error estimate** used in **reduced error pruning**.
+- A **lower confidence** (e.g., 0.05) means:
+    - The algorithm is **more cautious**.
+    - It assumes there is more uncertainty.
+    - So, it prunes **more aggressively** (removes more branches).
+    - The tree becomes **simpler**, less overfit, but possibly underfit.
+- A **higher confidence** (e.g., 0.25 or 0.4) means:
+    - The algorithm is **less strict**.
+    - It keeps **more branches**.
+    - The tree becomes **more complex**, fitting the training data better but risking overfitting.
 ## Rule Induction
 **Rule induction** is a machine learning technique where we extract **if–then rules** from data
 - Instead of a black-box model (like a neural net), we get interpretable rules
