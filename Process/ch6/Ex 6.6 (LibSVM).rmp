@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="9.10.008">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="9.10.008" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="retrieve" compatibility="9.10.008" expanded="true" height="68" name="Retrieve IrisFromWeka" width="90" x="45" y="34">
+        <parameter key="repository_entry" value="data/IrisFromWeka"/>
+      </operator>
+      <operator activated="true" class="split_data" compatibility="9.10.008" expanded="true" height="103" name="Split Data" width="90" x="45" y="136">
+        <enumeration key="partitions">
+          <parameter key="ratio" value="0.7"/>
+          <parameter key="ratio" value="0.3"/>
+        </enumeration>
+        <parameter key="sampling_type" value="automatic"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+        <description align="left" color="orange" colored="true" width="126">Partition 1 = 0.7&lt;br/&gt;Partition 2 = 0.3</description>
+      </operator>
+      <operator activated="true" class="support_vector_machine_libsvm" compatibility="9.10.008" expanded="true" height="82" name="LibSVM" width="90" x="246" y="34">
+        <parameter key="svm_type" value="C-SVC"/>
+        <parameter key="kernel_type" value="linear"/>
+        <parameter key="degree" value="3"/>
+        <parameter key="gamma" value="0.0"/>
+        <parameter key="coef0" value="0.0"/>
+        <parameter key="C" value="0.0"/>
+        <parameter key="nu" value="0.5"/>
+        <parameter key="cache_size" value="80"/>
+        <parameter key="epsilon" value="0.001"/>
+        <parameter key="p" value="0.1"/>
+        <list key="class_weights"/>
+        <parameter key="shrinking" value="true"/>
+        <parameter key="calculate_confidences" value="false"/>
+        <parameter key="confidence_for_multiclass" value="true"/>
+      </operator>
+      <operator activated="true" class="apply_model" compatibility="9.10.008" expanded="true" height="82" name="Apply Model" width="90" x="380" y="136">
+        <list key="application_parameters"/>
+        <parameter key="create_view" value="false"/>
+      </operator>
+      <operator activated="true" class="performance" compatibility="9.10.008" expanded="true" height="82" name="Performance" width="90" x="514" y="34">
+        <parameter key="use_example_weights" value="true"/>
+      </operator>
+      <connect from_op="Retrieve IrisFromWeka" from_port="output" to_op="Split Data" to_port="example set"/>
+      <connect from_op="Split Data" from_port="partition 1" to_op="LibSVM" to_port="training set"/>
+      <connect from_op="Split Data" from_port="partition 2" to_op="Apply Model" to_port="unlabelled data"/>
+      <connect from_op="LibSVM" from_port="model" to_op="Apply Model" to_port="model"/>
+      <connect from_op="Apply Model" from_port="labelled data" to_op="Performance" to_port="labelled data"/>
+      <connect from_op="Apply Model" from_port="model" to_port="result 2"/>
+      <connect from_op="Performance" from_port="performance" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="84"/>
+      <portSpacing port="sink_result 3" spacing="21"/>
+      <description align="left" color="green" colored="true" height="93" resized="true" width="208" x="162" y="202">LibSVM params&lt;br&gt;- SVM type (C-SVC or nu-SVC)&lt;br&gt;- Kernel&lt;br/&gt;- C for C-SVC or nu for nu-SVC</description>
+    </process>
+  </operator>
+</process>

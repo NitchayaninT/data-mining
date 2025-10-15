@@ -5,5 +5,5 @@
 - ### [Data Preprocessing](./Process/ch3/Data%20Preprocessing.md)
 ## - Classification Methods
 - ### [Decision Trees and Rule Induction](./Process/ch4/Classification%20Methods%201.md)
-- ### KNN and Naive Bayes
+- ### [KNN and Naive Bayes](./Process/ch5/Classification%20Methods%202.md)
 - ### Artificial Neural Network (ANN) and Support Vector Machine (SVM)
