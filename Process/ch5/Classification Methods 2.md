@@ -44,16 +44,17 @@ Record 1 = **1** 0 0 0 0 0 **0** 0 0 **0**
 Record 2 = **0** 0 0 0 0 0 **1** 0 0 **1**
 - **Distance : Hamming**
 
-![[Screenshot 2025-10-16 at 12.51.18.png]]
+![hamming-distance.png](/pictures/hamming-distance.png)
 
 - **Similarity : Simple Matching Coefficient (SMC)**
-![[Screenshot 2025-10-16 at 12.51.35.png]]
+
+![SMC.png](/pictures/SMC.png)
 
 Can be misleading because if the matching is 1,1 or 0,0, it cannot tell a difference. only that they're similar, it considers 0,0 (coabsence) to have equal weight as copresences, but in reality, sometimes coabsences isnt as meaningful.
 If the categories (like is student, is not student) have equal weights, 1,1 and 0,0 both mean "same". So SMC is appropriate
 - **Similarity : Jaccard**
 
-![[Screenshot 2025-10-16 at 12.58.32.png]]
+![[jaccard.png]]
 
 - co-presences (number of matching 1's)= 0
 - co-absences (number of matching 0's) = 7
@@ -68,15 +69,15 @@ So, **jaccard = 0/(10-7)=0**
 ### Distance between numeric values
 - **Manhattan distance**
 
-![[Screenshot 2025-10-16 at 13.19.56.png]]
+![[manhattan.png]]
 
 - **Euclidean distance**
 
-![[Screenshot 2025-10-16 at 13.20.11.png]]
+![[euclidean.png]]
 
 - **Chebyshev distance**
 
-![[Screenshot 2025-10-16 at 13.20.25.png]]
+![[Chebyshev.png]]
 
 ### Similarity between numeric values
 ## K-Nearest Neighbors (KNN)
