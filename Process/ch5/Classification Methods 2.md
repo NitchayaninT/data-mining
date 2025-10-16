@@ -40,8 +40,8 @@
 		- Between records 2 and 3 : distance = 1, similarity = 0
 ### Distance & Similarity between boolean values
 Example : There are 10 bits (boolean)
-Record 1 = 1 0 0 0 0 0 0 0 0 0
-Record 2 = 0 0 0 0 0 0 1 0 0 1
+Record 1 = **1** 0 0 0 0 0 **0** 0 0 **0**
+Record 2 = **0** 0 0 0 0 0 **1** 0 0 **1**
 - **Distance : Hamming**
 
 ![[Screenshot 2025-10-16 at 12.51.18.png]]
@@ -49,8 +49,10 @@ Record 2 = 0 0 0 0 0 0 1 0 0 1
 - **Similarity : Simple Matching Coefficient (SMC)**
 ![[Screenshot 2025-10-16 at 12.51.35.png]]
 
-Not useful because if the matching is 1,1 or 0,0, it cannot tell a difference. only that they're similar but it doesn't know they're similar in "**what sense**"
+Can be misleading because if the matching is 1,1 or 0,0, it cannot tell a difference. only that they're similar but it doesn't know they're similar in "**what sense**"
 - **Similarity : Jaccard**
+
+![[Screenshot 2025-10-16 at 12.58.32.png]]
 
 
 ### Distance between numeric values
