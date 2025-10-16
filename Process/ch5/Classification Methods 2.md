@@ -50,6 +50,7 @@ Record 2 = **0** 0 0 0 0 0 **1** 0 0 **1**
 ![[Screenshot 2025-10-16 at 12.51.35.png]]
 
 Can be misleading because if the matching is 1,1 or 0,0, it cannot tell a difference. only that they're similar but it doesn't know they're similar in "**what sense**"
+If the categories (like is student, is not student) have equal weights, 1,1 and 0,0 both mean "same". So SMC is appropriate
 - **Similarity : Jaccard**
 
 ![[Screenshot 2025-10-16 at 12.58.32.png]]
@@ -58,10 +59,11 @@ Can be misleading because if the matching is 1,1 or 0,0, it cannot tell a differ
 - co-absences (number of matching 0's) = 7
 - total bits = 10
 So, **jaccard = 0/(10-7)=0**
-
+- Mutual absence doesnt necessarily imply similarity (like when both people not liking 90% of the movies, it doesnt make them similiar)
+- So, jaccard gives unequal weight : focuses only on shared presences (1-1) a
 **Comparing SMC and Jaccard**
-- Use SMC when we give equal weights to both categories
-- Use Jaccard when we give unequal weights to both categories
+- Use SMC when we give ==equal weights== to both categories
+- Use Jaccard when we give ==unequal weights== to both categories
 
 ### Distance between numeric values
 ### Similarity between numeric values
