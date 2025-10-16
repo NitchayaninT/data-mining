@@ -6,7 +6,7 @@
       {
         "id": "10f751d5560024d5",
         "type": "tabs",
-        "dimension": 79.61264016309887,
+        "dimension": 83.06519898391194,
         "children": [
           {
             "id": "e22b16be6d9df7d4",
@@ -54,7 +54,7 @@
       {
         "id": "f121acd8497254db",
         "type": "tabs",
-        "dimension": 20.38735983690112,
+        "dimension": 16.93480101608806,
         "children": [
           {
             "id": "7ffb0c91e3435904",
@@ -128,8 +128,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e3d67f66f144d629",
@@ -234,15 +233,19 @@
   },
   "active": "3ef88e06a742fbd2",
   "lastOpenFiles": [
-    "Untitled.md",
+    "pictures/Screenshot 2025-10-16 at 12.51.18.png",
     "Process/ch5/Classification Methods 2.md",
+    "pictures/Screenshot 2025-10-16 at 12.51.35.png",
+    "pictures/Screenshot 2025-10-16 at 13.20.25.png",
+    "pictures/Screenshot 2025-10-16 at 13.20.11.png",
+    "pictures/Screenshot 2025-10-16 at 13.19.56.png",
+    "pictures/Screenshot 2025-10-16 at 12.58.32.png",
+    "Untitled.md",
     "Process/ch2/Data Exploration.md",
     "Screenshot 2025-10-16 at 13.20.25.png",
     "Screenshot 2025-10-16 at 13.20.11.png",
     "Screenshot 2025-10-16 at 13.19.56.png",
     "Screenshot 2025-10-16 at 12.58.32.png",
-    "Screenshot 2025-10-16 at 12.51.35.png",
-    "Screenshot 2025-10-16 at 12.51.18.png",
     "Process/ch4/Classification Methods 1.md",
     "README.md",
     "Rapid Miner.md",
@@ -256,10 +259,6 @@
     "Process/ch6/Ex 6.2 (neural net with nominal).rmp",
     "Process/ch6/Ex 6.1 (neural net with numeric).rmp",
     "Process/ch6/Ex 6.4 (SVM with nonlinear data).rmp",
-    "pictures/TreeToRules.png",
-    "pictures/coverageSupport.png",
-    "pictures/AccuracyConfidence.png",
-    "pictures/testingRecords.png",
     "Process/ch3/Data Preprocessing.md",
     "Untitled.canvas",
     "Process/ch3.md"
