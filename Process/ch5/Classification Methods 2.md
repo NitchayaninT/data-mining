@@ -54,7 +54,7 @@ Can be misleading because if the matching is 1,1 or 0,0, it cannot tell a differ
 If the categories (like is student, is not student) have equal weights, 1,1 and 0,0 both mean "same". So SMC is appropriate
 - **Similarity : Jaccard**
 
-![[jaccard.png]]
+![jaccard.png](/pictures/jaccard.png)
 
 - co-presences (number of matching 1's)= 0
 - co-absences (number of matching 0's) = 7
@@ -69,15 +69,15 @@ So, **jaccard = 0/(10-7)=0**
 ### Distance between numeric values
 - **Manhattan distance**
 
-![[manhattan.png]]
+![manhattan.png](/pictures/manhattan.png)
 
 - **Euclidean distance**
 
-![[euclidean.png]]
+![euclidean.png](/pictures/euclidean.png)
 
 - **Chebyshev distance**
 
-![[Chebyshev.png]]
+![Chebyshev.png](/pictures/Chebyshev.png)
 
 ### Similarity between numeric values
 ## K-Nearest Neighbors (KNN)
