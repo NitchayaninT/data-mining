@@ -66,6 +66,18 @@ So, **jaccard = 0/(10-7)=0**
 - Use Jaccard when we give ==unequal weights== to both categories
 
 ### Distance between numeric values
+- **Manhattan distance**
+
+![[Screenshot 2025-10-16 at 13.19.56.png]]
+
+- **Euclidean distance**
+
+![[Screenshot 2025-10-16 at 13.20.11.png]]
+
+- **Chebyshev distance**
+
+![[Screenshot 2025-10-16 at 13.20.25.png]]
+
 ### Similarity between numeric values
 ## K-Nearest Neighbors (KNN)
 

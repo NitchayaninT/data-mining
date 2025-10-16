@@ -201,12 +201,23 @@
               "icon": "lucide-list",
               "title": "Outline of Rapid Miner"
             }
+          },
+          {
+            "id": "7e4904a05cd4484b",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -223,11 +234,16 @@
   },
   "active": "3ef88e06a742fbd2",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Process/ch5/Classification Methods 2.md",
+    "Process/ch2/Data Exploration.md",
+    "Screenshot 2025-10-16 at 13.20.25.png",
+    "Screenshot 2025-10-16 at 13.20.11.png",
+    "Screenshot 2025-10-16 at 13.19.56.png",
     "Screenshot 2025-10-16 at 12.58.32.png",
     "Screenshot 2025-10-16 at 12.51.35.png",
     "Screenshot 2025-10-16 at 12.51.18.png",
     "Process/ch4/Classification Methods 1.md",
-    "Process/ch5/Classification Methods 2.md",
     "README.md",
     "Rapid Miner.md",
     "Process/ch6/Ex 6.5 (SVM with polynominal class).rmp",
@@ -244,11 +260,6 @@
     "pictures/coverageSupport.png",
     "pictures/AccuracyConfidence.png",
     "pictures/testingRecords.png",
-    "pictures/subtreeEstimatedError.png",
-    "pictures/postPruningData.png",
-    "pictures/postPruningTree.png",
-    "pictures/maritalPenalty.png",
-    "Process/ch2/Data Exploration.md",
     "Process/ch3/Data Preprocessing.md",
     "Untitled.canvas",
     "Process/ch3.md"
