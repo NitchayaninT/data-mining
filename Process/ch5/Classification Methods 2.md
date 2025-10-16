@@ -54,6 +54,14 @@ Can be misleading because if the matching is 1,1 or 0,0, it cannot tell a differ
 
 ![[Screenshot 2025-10-16 at 12.58.32.png]]
 
+- co-presences (number of matching 1's)= 0
+- co-absences (number of matching 0's) = 7
+- total bits = 10
+So, **jaccard = 0/(10-7)=0**
+
+**Comparing SMC and Jaccard**
+- Use SMC when we give equal weights to both categories
+- Use Jaccard when we give unequal weights to both categories
 
 ### Distance between numeric values
 ### Similarity between numeric values
