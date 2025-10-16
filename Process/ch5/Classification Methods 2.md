@@ -39,6 +39,18 @@
 		- Between records 1 and 3 : distance = 0, similarity = 1
 		- Between records 2 and 3 : distance = 1, similarity = 0
 ### Distance & Similarity between boolean values
+Example : There are 10 bits (boolean)
+Record 1 = 1 0 0 0 0 0 0 0 0 0
+Record 2 = 0 0 0 0 0 0 1 0 0 1
+- **Distance : Hamming**
+
+![[Screenshot 2025-10-16 at 12.51.18.png]]
+
+- **Similarity : Simple Matching Coefficient (SMC)**
+![[Screenshot 2025-10-16 at 12.51.35.png]]
+
+
+
 ### Distance between numeric values
 ### Similarity between numeric values
 ## K-Nearest Neighbors (KNN)

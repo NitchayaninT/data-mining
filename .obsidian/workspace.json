@@ -128,7 +128,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 231.50260543823242
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e3d67f66f144d629",
@@ -222,6 +223,8 @@
   },
   "active": "3ef88e06a742fbd2",
   "lastOpenFiles": [
+    "Screenshot 2025-10-16 at 12.51.35.png",
+    "Screenshot 2025-10-16 at 12.51.18.png",
     "Process/ch4/Classification Methods 1.md",
     "Process/ch5/Classification Methods 2.md",
     "README.md",
@@ -245,7 +248,6 @@
     "pictures/postPruningTree.png",
     "pictures/maritalPenalty.png",
     "Screenshot 2025-10-03 at 14.17.03.png",
-    "pictures/splitPenalty.png",
     "Process/ch2/Data Exploration.md",
     "Process/ch3/Data Preprocessing.md",
     "Untitled.canvas",
