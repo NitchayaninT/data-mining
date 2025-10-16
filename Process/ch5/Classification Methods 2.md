@@ -49,6 +49,8 @@ Record 2 = 0 0 0 0 0 0 1 0 0 1
 - **Similarity : Simple Matching Coefficient (SMC)**
 ![[Screenshot 2025-10-16 at 12.51.35.png]]
 
+Not useful because if the matching is 1,1 or 0,0, it cannot tell a difference. only that they're similar but it doesn't know they're similar in "**what sense**"
+- **Similarity : Jaccard**
 
 
 ### Distance between numeric values
