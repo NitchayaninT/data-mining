@@ -67,6 +67,7 @@ So, **jaccard = 0/(10-7)=0**
 - Use Jaccard when we give ==unequal weights== to both categories
 
 ### Distance between numeric values
+
 - **Manhattan distance**
 
 ![manhattan.png](/pictures/manhattan.png)
