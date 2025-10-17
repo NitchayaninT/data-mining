@@ -101,8 +101,16 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 
 - All points on **red line** have **Euclidean distance** = 2 from (0,0), circle has radius = 2, so all points on red circle are 2 units away from the middle
 - All points on **blue line** have **Manhattan distance** = 2 from (0,0), the total steps horizontally and vertically add up to 2
-- All points on **green line** have **Chebyshev distance** = 2 from (0,0), at least one coordinate on the square equals 2 (max distance between x,y attributes)
+- All points on **green line** have **Chebyshev distance** = 2 from (0,0), at least one coordinate on the square equals 2 (max distance between x1,x2 and y1,y2)
 ### Similarity between numeric values
+- **Cosine Similarity** : Dot product between 2 vectors
+
+![[Screenshot 2025-10-17 at 12.47.40.png]]
+
+	- Completely similar = angle between vectors = 0
+	- Completely dissimilar = angle between vectors = 90
+
+
 ## K-Nearest Neighbors (KNN)
 
 ## Naive Bayes
