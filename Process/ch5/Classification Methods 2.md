@@ -120,6 +120,7 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 	- Every attribute contribute unequally to the proximity between objects
 	- For example, distance between students should be based on their GPA rather than height
 	- **Fixed by attribute weighting** -> Multiplying GPA by a weight factor
+	- Use **feature selection method** to determine attribute scores
 ## K-Nearest Neighbors (KNN)
 
 ## Naive Bayes
