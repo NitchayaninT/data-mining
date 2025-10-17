@@ -130,11 +130,16 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 	- **Fixed by attribute weighting** -> Multiplying GPA by a weight factor
 	- Use **feature selection method** to determine attribute scores
 ## K-Nearest Neighbors (KNN)
-- If numeric attributes have different scales, normalize them so that attributes with big scales don't dominate distance calculation
 - K = number of closest neighbors to look at
 - **Odd K value is recommended** to avoid tie
 - Each neighbor's vote can be weighted by the distance between the neighbor and the target
 - KNN uses **Euclidean, Manhattan, or other distance metrics** to compute distance between the new point and all existing points (we can specify that by ourselves using python's sklearn)
 - Pick the K smallest distances (nearest neighbors)
-- This is mainly for classification, taking majority vote among the neighbors' labels (eg. if 2 of 3 neighbors are class A, predict A)
+- This is mainly for **classification**, taking majority vote among the neighbors' labels (eg. if 2 of 3 neighbors are class A, predict A)
+### Data normalization for KNN
+- If numeric attributes have **different scales**, **normalize them** so that attributes with big scales don't dominate distance calculation
+	- To normalize, use data preprocessing process like weight by gain ratio, chi square or manually and then "scale by weights" after that. 
+	- After scaling, we can then split data for training and testing in KNN
+### KNN Summary
+- No learning phase
 ## Naive Bayes
