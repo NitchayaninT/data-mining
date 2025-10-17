@@ -134,5 +134,7 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 - K = number of closest neighbors to look at
 - **Odd K value is recommended** to avoid tie
 - Each neighbor's vote can be weighted by the distance between the neighbor and the target
-- KNN uses Euclidean, Manhattan 
+- KNN uses **Euclidean, Manhattan, or other distance metrics** to compute distance between the new point and all existing points (we can specify that by ourselves using python's sklearn)
+- Pick the K smallest distances (nearest neighbors)
+- This is mainly for classification, taking majority vote among the neighbors' labels (eg. if 2 of 3 neighbors are class A, predict A)
 ## Naive Bayes
