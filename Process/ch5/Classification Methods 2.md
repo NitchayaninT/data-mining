@@ -198,3 +198,13 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 
 ![[Screenshot 2025-10-17 at 16.00.08.png]]
 
+- **Prediction = No**
+
+### Laplace Correction
+- Zero probability causes the whole p(yes|X) to be zero
+- To avoid this, we **add 1 to the frequency of each category** if attribute A has k categories
+
+![[Screenshot 2025-10-17 at 16.03.38.png]]
+
+![[Screenshot 2025-10-17 at 16.04.56.png]]
+
