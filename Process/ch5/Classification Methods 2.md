@@ -67,19 +67,25 @@ So, **jaccard = 0/(10-7)=0**
 - Use Jaccard when we give ==unequal weights== to both categories
 
 ### Distance between numeric values
-
+Each record contains n numeric attributes, meaning there are n numbers (features) describing each record
+- **Record X** = (x1,x2,...,xn)
+- **Record Y** = (y1,y2,...,yn), where n = numeric attribute
 - **Manhattan distance**
 
 ![manhattan.png](/pictures/manhattan.png)
 
+	- Preferred over Euclidean distance when #attributes is large because euclidean distance (which sqaures and roots values) can be overly affected by one large difference
 - **Euclidean distance**
 
 ![euclidean.png](/pictures/euclidean.png)
 
+	- Most commonly used
+	- Straight line distance between 2 points in n-dimensional spa
 - **Chebyshev distance**
 
 ![Chebyshev.png](/pictures/Chebyshev.png)
 
+These distances tell how **similar or different** the two records are in numeric terms
 ### Similarity between numeric values
 ## K-Nearest Neighbors (KNN)
 
