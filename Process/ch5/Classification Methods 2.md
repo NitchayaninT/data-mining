@@ -141,5 +141,7 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 	- To normalize, use data preprocessing process like weight by gain ratio, chi square or manually and then "scale by weights" after that. 
 	- After scaling, we can then split data for training and testing in KNN
 ### KNN Summary
-- No learning phase
+- No learning phase (doesn't build a model, lazy learner)
+- KNN simply stores the training data and waits until it needs to make a prediction
+- 
 ## Naive Bayes
