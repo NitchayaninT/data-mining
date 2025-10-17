@@ -177,7 +177,7 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 
 ![[Screenshot 2025-10-17 at 15.47.11.png]]
 
-** the denominator must be the count of rows in the conditioned class, not total dataset
+** the denominator must be the **count of rows in the conditioned class (yes, no),** not total dataset
 **House**
 - P(owner|yes) = 0/3
 - P(tenant|yes) = 3/3
@@ -190,6 +190,11 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 - P(single|no) = 2/7
 - P(married|no) = 4/7
 - P(divorced|no) = 1/7
-Income
+**Income**
 - no -> mean = 110, var = 2975
 - yes -> mean = 90, var = 25
+### predicting a new record
+- after we get the info of P(Ai|class), we can now predict which class the new value belongs to
+
+![[Screenshot 2025-10-17 at 16.00.08.png]]
+
