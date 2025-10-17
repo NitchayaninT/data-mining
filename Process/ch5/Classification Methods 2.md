@@ -177,6 +177,7 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 
 ![[Screenshot 2025-10-17 at 15.47.11.png]]
 
+** the denominator must be the count of rows in the conditioned class, not total dataset
 **House**
 - P(owner|yes) = 0/3
 - P(tenant|yes) = 3/3
@@ -186,3 +187,9 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 - P(single|yes) = 2/3
 - P(married|yes) = 0/3
 - P(divorced|yes) = 1/3
+- P(single|no) = 2/7
+- P(married|no) = 4/7
+- P(divorced|no) = 1/7
+Income
+- no -> mean = 110, var = 2975
+- yes -> mean = 90, var = 25
