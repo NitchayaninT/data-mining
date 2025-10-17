@@ -218,5 +218,6 @@ P(yes|X) = 23.58%, P(no|X) = 76.42%
 **Prediction = no**
 
 - For nominal attribute, **unknown category is added** because of laplace correction. If unknown not in training data, probability becomes 0 and kills that class. So the output shows unknown with a small number for completeness
-- this is for the model to be able to make predictions even if an unseen value appears
+- this is for the model to be able to make predictions even if an **unseen value appears**
+### Naive Bayes Summary
 
