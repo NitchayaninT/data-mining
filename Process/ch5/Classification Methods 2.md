@@ -105,7 +105,7 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 - All points on **blue line** have **Manhattan distance** = 2 from (0,0), the total steps horizontally and vertically add up to 2
 - All points on **green line** have **Chebyshev distance** = 2 from (0,0), at least one coordinate on the square equals 2 (max distance between x1,x2 and y1,y2)
 
-- Mixed Euclidean (for mixed types, including nominal and numeric)
+- **Mixed Euclidean** (for mixed types, including nominal and numeric)
 
 ![[Screenshot 2025-10-17 at 14.20.50.png]]
 
@@ -113,6 +113,7 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 - **Cosine Similarity** : Dot product between 2 vectors
 
 ![[Screenshot 2025-10-17 at 12.47.40.png]]
+
 
 	- Completely similar = angle between vectors = 0
 	- Completely dissimilar = angle between vectors = 90
