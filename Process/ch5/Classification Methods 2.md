@@ -101,7 +101,7 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 
 - All points on **red line** have **Euclidean distance** = 2 from (0,0), circle has radius = 2, so all points on red circle are 2 units away from the middle
 - All points on **blue line** have **Manhattan distance** = 2 from (0,0), the total steps horizontally and vertically add up to 2
-- All points on **green line** have **Chebyshev distance** = 2 from (0,0), 
+- All points on **green line** have **Chebyshev distance** = 2 from (0,0), at least one coordinate on the square equals 2 (max distance between x,y attributes)
 ### Similarity between numeric values
 ## K-Nearest Neighbors (KNN)
 
