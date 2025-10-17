@@ -228,5 +228,7 @@ P(yes|X) = 23.58%, P(no|X) = 76.42%
 	- example, suppose shoe size has nothing to do with whether someone buys a phone
 	- when we multiply these probabilities across attributes, the ratio between classes is nearly 1, so it cancels out -> doesn't affect the decision
 - Important assumption = **attributes are independent of each other**
+	- but that's not true in most real data (features often correlate)
+	- but in practice, naive bayes still works surprisingly well because its estimating the "most likely class", **not the exact probabilities**
 	- Difficult to prove in practice
 
