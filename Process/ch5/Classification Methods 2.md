@@ -143,5 +143,6 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 ### KNN Summary
 - No learning phase (doesn't build a model, lazy learner)
 - KNN simply stores the training data and waits until it needs to make a prediction
-- 
+- So during training, it just memorizes the data. So "prediction" is expensive if training data is very big cuz we have to **compare target record with every training record** to find **K nearest neighbors**
+- KNN predicts the class of a new sample based on its **neighbors** in the **training set**.
 ## Naive Bayes
