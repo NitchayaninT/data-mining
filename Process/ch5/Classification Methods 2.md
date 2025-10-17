@@ -151,4 +151,19 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 ## Naive Bayes
 - It **predicts a class** based on how likely that class is **given** the feature values
 - Prediction is done by comparing P(Y=yes|X) and P(Y=no|X) and choose class label with higher probability
-- ![[Screenshot 2025-10-17 at 15.29.28.png]]
+
+![[Screenshot 2025-10-17 at 15.29.28.png]]
+
+- P(X) can be ignored
+- But finding P(X|yes), P(X|no) is not easy because X is not a single value (it contains many attributes), we have to compute **P(A1,A2,...,An|yes)** and **P(A1,A2,...,An|no)**
+
+### Naive assumption
+- Assuming the **attributes are independent**
+
+![[Screenshot 2025-10-17 at 15.32.31.png]]
+
+- To compute each P(Ai=a|yes) from training data
+	- **Nominal attr** : use relative frequency that Ai=a in class yes
+	- **Numeric attr** : use probability density from a Normal distribution function
+	
+![[Screenshot 2025-10-17 at 15.33.55.png]]
