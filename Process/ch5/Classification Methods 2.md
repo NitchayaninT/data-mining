@@ -62,6 +62,8 @@ If the categories (like is student, is not student) have equal weights, 1,1 and 
 So, **jaccard = 0/(10-7)=0**
 - Mutual absence doesnt necessarily imply similarity (like when both people not liking 90% of the movies, it doesnt make them similiar)
 - So, jaccard gives unequal weight : focuses only on shared presences (1-1) and ignore shared co-absences
+- if for Nominal attributes, its basically **#matches/#attributes**
+- If for binomial attributes, its true = presence. false = absenc
 **Comparing SMC and Jaccard**
 - Use SMC when we give ==equal weights== to both categories
 - Use Jaccard when we give ==unequal weights== to both categories
