@@ -63,7 +63,7 @@ So, **jaccard = 0/(10-7)=0**
 - Mutual absence doesnt necessarily imply similarity (like when both people not liking 90% of the movies, it doesnt make them similiar)
 - So, jaccard gives unequal weight : focuses only on shared presences (1-1) and ignore shared co-absences
 - if for Nominal attributes, its basically **#matches/#attributes**
-- If for binomial attributes, its true = presence. false = absenc
+- If for binomial attributes, its true = presence. false = absence
 **Comparing SMC and Jaccard**
 - Use SMC when we give ==equal weights== to both categories
 - Use Jaccard when we give ==unequal weights== to both categories
@@ -104,6 +104,11 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 - All points on **red line** have **Euclidean distance** = 2 from (0,0), circle has radius = 2, so all points on red circle are 2 units away from the middle
 - All points on **blue line** have **Manhattan distance** = 2 from (0,0), the total steps horizontally and vertically add up to 2
 - All points on **green line** have **Chebyshev distance** = 2 from (0,0), at least one coordinate on the square equals 2 (max distance between x1,x2 and y1,y2)
+
+- Mixed Euclidean (for mixed types, including nominal and numeric)
+
+![[Screenshot 2025-10-17 at 14.20.50.png]]
+
 ### Similarity between numeric values
 - **Cosine Similarity** : Dot product between 2 vectors
 
