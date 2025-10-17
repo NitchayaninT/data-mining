@@ -208,3 +208,9 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 
 ![[Screenshot 2025-10-17 at 16.04.56.png]]
 
+- + 2 at the denominator because **attribute has 2 categories**, which are owner and tenant
+### Predicting a new record (+Laplace correction)
+
+![[Screenshot 2025-10-17 at 16.06.45.png]]
+
+P(yes|X) + P(no|X) = 0.000432+0.0014=0.001832 
