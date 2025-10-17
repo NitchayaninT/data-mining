@@ -18,7 +18,7 @@
 		- Between nominal values
 		- Between boolean values : Simple matching coefficient (SMC), Jaccard 
 		- Between numeric values : Cosine
-- [K-Nearest Neighbors (KNN)](#k-nearest-neighbors-(KNN))
+- [K-Nearest Neighbors (KNN)](#k-nearest-neighbors-(knn))
 - [Naive Bayes](#naive-bayes)
 	- Conditional Probability
 	- Laplace correction
