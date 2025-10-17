@@ -149,3 +149,6 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 - K is too big -> misclassification 
 - KNN is also a popular method to **impute missing values**
 ## Naive Bayes
+- It **predicts a class** based on how likely that class is **given** the feature values
+- Prediction is done by comparing P(Y=yes|X) and P(Y=no|X) and choose class label with higher probability
+- ![[Screenshot 2025-10-17 at 15.29.28.png]]
