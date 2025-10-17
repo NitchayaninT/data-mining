@@ -222,6 +222,8 @@ P(yes|X) = 23.58%, P(no|X) = 76.42%
 ### Naive Bayes Summary
 - **Naturally handle noises** and **missing values**
 	- When estimating conditional probability, noises are averaged out & missing values are ignored
+	- If a record has a missing value, **that attribute is simply excluded** from the probability product
+	- Because naive bayes computes probabilities **over the entire dataset**, it tends to average out rather than dominate. So noisy points have little effect on the overall conditional probability
 - Robust to irrelevant attributes
 - Important assumption = **attributes are independent of each other**
 	- Difficult to prove in practice
