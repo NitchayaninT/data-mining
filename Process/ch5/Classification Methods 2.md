@@ -145,7 +145,7 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 - KNN simply stores the training data and waits until it needs to make a prediction
 - So during training, it just memorizes the data. So "prediction" is expensive if training data is very big cuz we have to **compare target record with every training record** to find **K nearest neighbors**
 - KNN predicts the class of a new sample based on its **neighbors** in the **training set**.
-- K too small -> sensitive to noise in the data instead of general patterns, overfitting
+- K too small -> **sensitive to noise** in the data instead of general patterns, overfitting
 - K is too big -> misclassification 
 - KNN is also a popular method to **impute missing values**
 ## Naive Bayes
@@ -220,4 +220,8 @@ P(yes|X) = 23.58%, P(no|X) = 76.42%
 - For nominal attribute, **unknown category is added** because of laplace correction. If unknown not in training data, probability becomes 0 and kills that class. So the output shows unknown with a small number for completeness
 - this is for the model to be able to make predictions even if an **unseen value appears**
 ### Naive Bayes Summary
-- 
+- **Naturally handle noises** and **missing values**
+	- When estimating conditional probability, noises are averaged out & missing values are ignored
+- Robust to irrelevant attributes
+- Important assumption = **attributes are independent of each other**
+	- Difficult to prove in practice
