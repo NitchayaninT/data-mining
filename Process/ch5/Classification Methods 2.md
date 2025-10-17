@@ -118,6 +118,8 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 	- Example : euclidean distance between people based on age and income attributes, the scales are different (distance is dominated by income)
 - **Attributes have different weights**
 	- Every attribute contribute unequally to the proximity between objects
+	- For example, distance between students should be based on their GPA rather than height
+	- **Fixed by attribute weighting** -> Multiplying GPA by a weight factor
 ## K-Nearest Neighbors (KNN)
 
 ## Naive Bayes
