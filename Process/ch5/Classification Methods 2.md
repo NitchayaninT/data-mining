@@ -149,7 +149,7 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 - K is too big -> misclassification 
 - KNN is also a popular method to **impute missing values**
 ## Naive Bayes
-- It **predicts a class** based on how likely that class is **given** the feature values (how lik)
+- It **predicts a class** based on how likely that class is **given** the feature values (how likely it is to see this attribute value GIVEN the class)
 - Prediction is done by comparing P(Y=yes|X) and P(Y=no|X) and choose class label with higher probability
 
 ![[Screenshot 2025-10-17 at 15.29.28.png]]
@@ -163,10 +163,13 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 ![[Screenshot 2025-10-17 at 15.32.31.png]]
 
 - To compute each P(Ai=a|yes) from training data
-	- **Nominal attr** : use relative frequency that Ai=a in class yes
-	- **Numeric attr** : use probability density from a Normal distribution function
+	- **Nominal attr** : use relative frequency that Ai=a in class yes (eg, how often Color = red appears in Fruit class = apple)
+	- **Numeric attr** : use probability density from a Normal distribution function. (eg, in class "Yes", the attribute "Age" might have a mean of 30 and stdev of 5, so most "Yes" people are around 30 years old)
 	
 ![[Screenshot 2025-10-17 at 15.33.55.png]]
 
 ![[Screenshot 2025-10-17 at 15.35.14.png]]
+
+		- a is the attribute from the value that we wanna predict class 'yes' or 'no'. we have to calculate mean and SD for both class yes and class no first
+		- if the probability of class yes is higher than no, then it predicts yes
 
