@@ -89,6 +89,14 @@ Each record contains n numeric attributes, meaning there are n numbers (features
 	- Measures the largest single difference among all the attributes
 	- It only cares about the biggest gap between the two records (which attribute has the biggest gap?)
 These distances tell how **similar or different** the two records are in numeric terms
+
+- **Minkowski Distance**
+Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
+
+![[Screenshot 2025-10-17 at 12.17.10.png]]
+
+![[Screenshot 2025-10-17 at 12.16.19.png]]
+
 ### Similarity between numeric values
 ## K-Nearest Neighbors (KNN)
 
