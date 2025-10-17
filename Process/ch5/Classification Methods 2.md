@@ -80,11 +80,14 @@ Each record contains n numeric attributes, meaning there are n numbers (features
 ![euclidean.png](/pictures/euclidean.png)
 
 	- Most commonly used
-	- Straight line distance between 2 points in n-dimensional spa
+	- Straight line distance between 2 points in n-dimensional space
+	- Represents the true geometric distance between points
 - **Chebyshev distance**
 
 ![Chebyshev.png](/pictures/Chebyshev.png)
 
+	- Measures the largest single difference among all the attributes
+	- It only cares about the biggest gap between the two records (which attribute has the biggest gap?)
 These distances tell how **similar or different** the two records are in numeric terms
 ### Similarity between numeric values
 ## K-Nearest Neighbors (KNN)
