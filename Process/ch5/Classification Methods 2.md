@@ -130,5 +130,9 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 	- **Fixed by attribute weighting** -> Multiplying GPA by a weight factor
 	- Use **feature selection method** to determine attribute scores
 ## K-Nearest Neighbors (KNN)
-
+- If numeric attributes have different scales, normalize them so that attributes with big scales don't dominate distance calculation
+- K = number of closest neighbors to look at
+- **Odd K value is recommended** to avoid tie
+- Each neighbor's vote can be weighted by the distance between the neighbor and the target
+- KNN uses Euclidean, Manhattan 
 ## Naive Bayes
