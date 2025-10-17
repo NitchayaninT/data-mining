@@ -217,4 +217,6 @@ P(yes|X) + P(no|X) = 0.000432 + 0.0014 = 0.001832
 P(yes|X) = 23.58%, P(no|X) = 76.42%
 **Prediction = no**
 
-- For nominal attribute, unknown category is added
+- For nominal attribute, **unknown category is added** because of laplace correction. If unknown not in training data, probability becomes 0 and kills that class. So the output shows unknown with a small number for completeness
+- this is for the model to be able to make predictions even if an unseen value appears
+
