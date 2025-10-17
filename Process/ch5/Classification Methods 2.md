@@ -173,3 +173,16 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 		- a is the attribute from the value that we wanna predict class 'yes' or 'no'. we have to calculate mean and SD for both class yes and class no first
 		- if the probability of class yes is higher than no, then it predicts yes
 
+### example
+
+![[Screenshot 2025-10-17 at 15.47.11.png]]
+
+**House**
+- P(owner|yes) = 0/3
+- P(tenant|yes) = 3/3
+- P(owner|no) = 3/7
+- P(tenant|no) = 4/7
+**Marital Status**
+- P(single|yes) = 2/3
+- P(married|yes) = 0/3
+- P(divorced|yes) = 1/3
