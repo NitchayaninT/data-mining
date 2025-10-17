@@ -109,8 +109,15 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 
 	- Completely similar = angle between vectors = 0
 	- Completely dissimilar = angle between vectors = 90
+	
+![[Screenshot 2025-10-17 at 12.48.49.png]]
 
-
+### Issues in Proximity Calculation
+- a record consists of different types of attributes
+- **Attributes have different scales**
+	- Example : euclidean distance between people based on age and income attributes, the scales are different (distance is dominated by income)
+- **Attributes have different weights**
+	- Every attribute contribute unequally to the proximity between objects
 ## K-Nearest Neighbors (KNN)
 
 ## Naive Bayes
