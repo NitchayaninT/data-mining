@@ -25,6 +25,18 @@
             "id": "3ef88e06a742fbd2",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "pictures/Screenshot 2025-10-17 at 16.06.45.png"
+              },
+              "icon": "lucide-image",
+              "title": "Screenshot 2025-10-17 at 16.06.45"
+            }
+          },
+          {
+            "id": "fe0e44655f789175",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "Process/ch5/Classification Methods 2.md",
@@ -33,18 +45,6 @@
               },
               "icon": "lucide-file",
               "title": "Classification Methods 2"
-            }
-          },
-          {
-            "id": "fe0e44655f789175",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "pictures/testingRecords.png"
-              },
-              "icon": "lucide-image",
-              "title": "testingRecords"
             }
           }
         ],
@@ -106,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e3d67f66f144d629",
@@ -212,18 +211,18 @@
   },
   "active": "3ef88e06a742fbd2",
   "lastOpenFiles": [
-    "Screenshot 2025-10-17 at 16.06.45.png",
-    "Screenshot 2025-10-17 at 16.04.56.png",
-    "Screenshot 2025-10-17 at 16.03.38.png",
-    "Screenshot 2025-10-17 at 16.00.08.png",
-    "Screenshot 2025-10-17 at 15.47.11.png",
-    "Screenshot 2025-10-17 at 15.35.14.png",
-    "Screenshot 2025-10-17 at 15.33.55.png",
-    "Screenshot 2025-10-17 at 15.32.31.png",
-    "Screenshot 2025-10-17 at 15.29.28.png",
-    "Screenshot 2025-10-17 at 14.20.50.png",
-    "Screenshot 2025-10-17 at 12.48.49.png",
+    "pictures/laplace-example.png",
+    "pictures/laplace-correction.png",
+    "pictures/naive-example2.png",
+    "pictures/naive-example.png",
+    "pictures/naive-numeric2.png",
+    "pictures/naive-numeric.png",
     "Process/ch5/Classification Methods 2.md",
+    "pictures/naive-assumption.png",
+    "pictures/naive_bayes.png",
+    "pictures/mixed-euclidean-formula.png",
+    "pictures/mixed-euclidean-example.png",
+    "pictures/mixed-euclidean.png",
     "Process/ch2/Data Exploration.md",
     "Untitled.md",
     "Process/ch4/Classification Methods 1.md",

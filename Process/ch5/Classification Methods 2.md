@@ -95,11 +95,11 @@ These distances tell how **similar or different** the two records are in numeric
 - **Minkowski Distance**
 Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 
-![[Screenshot 2025-10-17 at 12.17.10.png]]
+![[Minkowski.png]]
 
-![[Screenshot 2025-10-17 at 12.16.19.png]]
+![[distance_all.png]]
 
-![[Screenshot 2025-10-17 at 12.19.24.png]]
+![[distance_all2.png]]
 
 - All points on **red line** have **Euclidean distance** = 2 from (0,0), circle has radius = 2, so all points on red circle are 2 units away from the middle
 - All points on **blue line** have **Manhattan distance** = 2 from (0,0), the total steps horizontally and vertically add up to 2
@@ -107,18 +107,18 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 
 - **Mixed Euclidean** (for mixed types, including nominal and numeric)
 
-![[Screenshot 2025-10-17 at 14.20.50.png]]
+![[mixed-euclidean-formula.png]]
 
 ### Similarity between numeric values
 - **Cosine Similarity** : Dot product between 2 vectors
 
-![[Screenshot 2025-10-17 at 12.47.40.png]]
+![[mixed-euclidean.png]]
 
 
 	- Completely similar = angle between vectors = 0
 	- Completely dissimilar = angle between vectors = 90
 	
-![[Screenshot 2025-10-17 at 12.48.49.png]]
+![[mixed-euclidean-example.png]]
 
 ### Issues in Proximity Calculation
 - a record consists of different types of attributes
@@ -152,7 +152,7 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 - It **predicts a class** based on how likely that class is **given** the feature values (how likely it is to see this attribute value GIVEN the class)
 - Prediction is done by comparing P(Y=yes|X) and P(Y=no|X) and choose class label with higher probability
 
-![[Screenshot 2025-10-17 at 15.29.28.png]]
+![[naive_bayes.png]]
 
 - P(X) can be ignored
 - But finding P(X|yes), P(X|no) is not easy because X is not a single value (it contains many attributes), we have to compute **P(A1,A2,...,An|yes)** and **P(A1,A2,...,An|no)**
@@ -160,22 +160,22 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 ### Naive assumption
 - Assuming the **attributes are independent**
 
-![[Screenshot 2025-10-17 at 15.32.31.png]]
+![[naive-assumption.png]]
 
 - To compute each P(Ai=a|yes) from training data
 	- **Nominal attr** : use relative frequency that Ai=a in class yes (eg, how often Color = red appears in Fruit class = apple)
 	- **Numeric attr** : use probability density from a Normal distribution function. (eg, in class "Yes", the attribute "Age" might have a mean of 30 and stdev of 5, so most "Yes" people are around 30 years old)
 	
-![[Screenshot 2025-10-17 at 15.33.55.png]]
+![[naive-numeric.png]]
 
-![[Screenshot 2025-10-17 at 15.35.14.png]]
+![[naive-numeric2.png]]
 
 		- a is the attribute from the value that we wanna predict class 'yes' or 'no'. we have to calculate mean and SD for both class yes and class no first
 		- if the probability of class yes is higher than no, then it predicts yes
 
 ### example
 
-![[Screenshot 2025-10-17 at 15.47.11.png]]
+![[naive-example.png]]
 
 ** the denominator must be the **count of rows in the conditioned class (yes, no),** not total dataset
 **House**
@@ -196,7 +196,7 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 ### predicting a new record
 - after we get the info of P(Ai|class), we can now predict which class the new value belongs to
 
-![[Screenshot 2025-10-17 at 16.00.08.png]]
+![[naive-example2.png]]
 
 - **Prediction = No**
 
@@ -204,9 +204,9 @@ Manhattan, Euclidean, Chebyshev are special cases of Minkowski Distance
 - Zero probability causes the whole p(yes|X) to be zero
 - To avoid this, we **add 1 to the frequency of each category** if attribute A has k categories
 
-![[Screenshot 2025-10-17 at 16.03.38.png]]
+![[laplace-correction.png]]
 
-![[Screenshot 2025-10-17 at 16.04.56.png]]
+![[laplace-example.png]]
 
 - + 2 at the denominator because **attribute has 2 categories**, which are owner and tenant
 ### Predicting a new record (+Laplace correction)
