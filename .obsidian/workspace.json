@@ -27,10 +27,10 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "pictures/Screenshot 2025-10-17 at 16.06.45.png"
+                "file": "pictures/naive-with-laplace.png"
               },
               "icon": "lucide-image",
-              "title": "Screenshot 2025-10-17 at 16.06.45"
+              "title": "naive-with-laplace"
             }
           },
           {
@@ -46,9 +46,21 @@
               "icon": "lucide-file",
               "title": "Classification Methods 2"
             }
+          },
+          {
+            "id": "bf1f39cf80bafa24",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "pictures/laplace-correction.png"
+              },
+              "icon": "lucide-image",
+              "title": "laplace-correction"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -209,20 +221,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "3ef88e06a742fbd2",
+  "active": "fe0e44655f789175",
   "lastOpenFiles": [
-    "pictures/laplace-example.png",
+    "pictures/naive-with-laplace.png",
     "pictures/laplace-correction.png",
+    "Process/ch5/Classification Methods 2.md",
+    "pictures/laplace-example.png",
     "pictures/naive-example2.png",
     "pictures/naive-example.png",
     "pictures/naive-numeric2.png",
     "pictures/naive-numeric.png",
-    "Process/ch5/Classification Methods 2.md",
     "pictures/naive-assumption.png",
     "pictures/naive_bayes.png",
     "pictures/mixed-euclidean-formula.png",
-    "pictures/mixed-euclidean-example.png",
-    "pictures/mixed-euclidean.png",
     "Process/ch2/Data Exploration.md",
     "Untitled.md",
     "Process/ch4/Classification Methods 1.md",
