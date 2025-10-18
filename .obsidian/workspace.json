@@ -73,7 +73,8 @@
               "title": "laplace-correction"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -235,10 +236,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "e22b16be6d9df7d4",
+  "active": "3d9ddda269a03fec",
   "lastOpenFiles": [
-    "Process/ch5/Classification Methods 2.md",
     "Process/ch3/Data Preprocessing.md",
+    "Process/ch5/Classification Methods 2.md",
     "Process/ch4/Classification Methods 1.md",
     "Process/ch6/Neural Network, SVM.md",
     "README.md",
