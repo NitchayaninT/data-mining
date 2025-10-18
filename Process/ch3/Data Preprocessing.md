@@ -52,7 +52,7 @@ Normalization **transform numeric attribute** by **changing its scale** or range
 ---
 - ==Nominal -> Binary (binarization)==
 	- **Binary encoding** = map each category to unique binary code
-	- **One-hot encoding** = map each category to each binary code (RapidMiner uses this approach, expanded to 5 columns with each category)
+		- **One-hot encoding** = map each category to each binary code (RapidMiner uses this approach, expanded to 5 columns with each category)
 	
 ![[one-hot-encoding.png]]
 
