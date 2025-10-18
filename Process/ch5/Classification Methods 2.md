@@ -1,6 +1,6 @@
 # Classification Methods 2
 - **Eager VS Lazy Learners**
-	- Eager Learners 
+	- Eager Learners
 		- Build model as soon as training data is available
 		- Model is built ==before prediction==
 		- Eg : Decision trees, rule-based classifiers
