@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Process/ch4/Classification Methods 1.md",
+                "file": "Process/ch3/Data Preprocessing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Classification Methods 1"
+              "title": "Data Preprocessing"
             }
           },
           {
@@ -73,8 +73,7 @@
               "title": "laplace-correction"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -236,11 +235,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "3d9ddda269a03fec",
+  "active": "e22b16be6d9df7d4",
   "lastOpenFiles": [
+    "Process/ch4/Classification Methods 1.md",
+    "Process/ch5/Classification Methods 2.md",
     "Process/ch6/Neural Network, SVM.md",
     "README.md",
-    "Process/ch5/Classification Methods 2.md",
     "pictures/naive-with-laplace.png",
     "pictures/laplace-correction.png",
     "pictures/laplace-example.png",
@@ -252,7 +252,6 @@
     "pictures/naive_bayes.png",
     "pictures/mixed-euclidean-formula.png",
     "Process/ch2/Data Exploration.md",
-    "Process/ch4/Classification Methods 1.md",
     "Rapid Miner.md",
     "Process/ch6/Ex 6.5 (SVM with polynominal class).rmp",
     "Process/ch6/Ex 6.3 (SVM with linear data).rmp",
