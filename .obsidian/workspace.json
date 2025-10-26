@@ -53,12 +53,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Process/ch5/Classification Methods 2.md",
+                "file": "Process/ch7/Performance Evaluation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Classification Methods 2"
+              "title": "Performance Evaluation"
             }
           },
           {
@@ -132,7 +132,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e3d67f66f144d629",
@@ -235,8 +236,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "8ed5f3a2e348d308",
+  "active": "3d9ddda269a03fec",
   "lastOpenFiles": [
+    "Process/ch5/Classification Methods 2.md",
     "pictures/sensitivity.png",
     "pictures/profit-matrix.png",
     "pictures/penaltymatrix.png",
@@ -247,14 +249,12 @@
     "pictures/classifer1-2.png",
     "pictures/TPFPRate.png",
     "pictures/ROCtable.png",
-    "pictures/ROC.png",
     "Process/ex4/E425_ex4.pdf",
     "Process/ex4/E425_ex4.docx",
     "Process/ex4",
     "Process/ch7/Performance Evaluation.md",
     "Process/ch7",
     "Process/ch3/Data Preprocessing.md",
-    "Process/ch5/Classification Methods 2.md",
     "Process/ch4/Classification Methods 1.md",
     "Process/ch6/Neural Network, SVM.md",
     "README.md",
