@@ -132,8 +132,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e3d67f66f144d629",
@@ -236,23 +235,29 @@
       "bases:Create new base": false
     }
   },
-  "active": "3d9ddda269a03fec",
+  "active": "8ed5f3a2e348d308",
   "lastOpenFiles": [
+    "pictures/sensitivity.png",
+    "pictures/profit-matrix.png",
+    "pictures/penaltymatrix.png",
+    "pictures/overallaccuary.png",
+    "pictures/cost-matrix.png",
+    "pictures/confusion-matrix2.png",
+    "pictures/confusion-matrix.png",
+    "pictures/classifer1-2.png",
+    "pictures/TPFPRate.png",
+    "pictures/ROCtable.png",
+    "pictures/ROC.png",
+    "Process/ex4/E425_ex4.pdf",
+    "Process/ex4/E425_ex4.docx",
+    "Process/ex4",
+    "Process/ch7/Performance Evaluation.md",
+    "Process/ch7",
     "Process/ch3/Data Preprocessing.md",
     "Process/ch5/Classification Methods 2.md",
     "Process/ch4/Classification Methods 1.md",
     "Process/ch6/Neural Network, SVM.md",
     "README.md",
-    "pictures/naive-with-laplace.png",
-    "pictures/laplace-correction.png",
-    "pictures/laplace-example.png",
-    "pictures/naive-example2.png",
-    "pictures/naive-example.png",
-    "pictures/naive-numeric2.png",
-    "pictures/naive-numeric.png",
-    "pictures/naive-assumption.png",
-    "pictures/naive_bayes.png",
-    "pictures/mixed-euclidean-formula.png",
     "Process/ch2/Data Exploration.md",
     "Rapid Miner.md",
     "Process/ch6/Ex 6.5 (SVM with polynominal class).rmp",
@@ -261,10 +266,6 @@
     "Process/ch6/data/SVM_linear.csv",
     "Process/ch6/data/IrisFromWeka.rmhdf5table",
     "Process/ch6/data",
-    "Process/ch6/Ex 6.6 (LibSVM).rmp",
-    "Process/ch6/Ex 6.2 (neural net with nominal).rmp",
-    "Process/ch6/Ex 6.1 (neural net with numeric).rmp",
-    "Process/ch6/Ex 6.4 (SVM with nonlinear data).rmp",
     "Untitled.canvas",
     "Process/ch3.md"
   ]
