@@ -46,6 +46,7 @@ example 1, **predictor X and numeric target Y**
 	- Normalized RMSE
 	- Useful for comparing different models
 	- It compares our model’s RMSE to the RMSE of a **baseline model** that always predicts the mean of the target values.
+	- **Does our model predict better than the mean?** if RRSE = 0 means perfect prediction
 
 ![[Pasted image 20251113000341.png]]
 `0 <= RRSE <= 1`
