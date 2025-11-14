@@ -53,12 +53,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Process/ch7/Performance Evaluation.md",
+                "file": "Process/ch8/Regression.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Performance Evaluation"
+              "title": "Regression"
             }
           },
           {
@@ -132,8 +132,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 354.5026054382324
   },
   "right": {
     "id": "e3d67f66f144d629",
@@ -238,6 +237,7 @@
   },
   "active": "3d9ddda269a03fec",
   "lastOpenFiles": [
+    "Process/ch7/Performance Evaluation.md",
     "Process/ch5/Classification Methods 2.md",
     "pictures/sensitivity.png",
     "pictures/profit-matrix.png",
@@ -252,7 +252,6 @@
     "Process/ex4/E425_ex4.pdf",
     "Process/ex4/E425_ex4.docx",
     "Process/ex4",
-    "Process/ch7/Performance Evaluation.md",
     "Process/ch7",
     "Process/ch3/Data Preprocessing.md",
     "Process/ch4/Classification Methods 1.md",
