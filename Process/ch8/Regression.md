@@ -43,7 +43,9 @@ example 1, **predictor X and numeric target Y**
 
 - **Root of relative squared error (RRSE)**
 	- Error with respect to **variance** of this data set
+	- Normalized RMSE
 	- Useful for comparing different models
+	- It compares our model’s RMSE to the RMSE of a **baseline model** that always predicts the mean of the target values.
 
 ![[Pasted image 20251113000341.png]]
 `0 <= RRSE <= 1`
