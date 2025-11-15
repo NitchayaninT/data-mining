@@ -69,8 +69,6 @@ This graph shows the error of the ensemble when we combine many base classifers 
 ### Stacking
 Splits data into 2 partitions
 **Stacking** tries to **learn how to combine multiple models** (base classifiers) in a smart way
-**Example** : we have 3 base models (trained by Decision Tree, SVM,kNN). we trained EACH of them normally using partition (1).
-Another partition (2) is used for meta training, it uses the prediction results from base classifiers + true label from partition (2). meta classifier learns 
 - **Base training**
 	- Use **training partition (1)** to train base classifiers
 - **Meta training**
@@ -78,6 +76,10 @@ Another partition (2) is used for meta training, it uses the prediction results 
 	- Use **prediction results by base classifiers** to train meta classifier
 	- Meta classifier learns prediction patterns of base classifiers that lead to the correct prediction
 	- Simple classifiers are often used as meta classifiers
+	
+**Example** : we have 3 base models (trained by Decision Tree, SVM,kNN). we trained EACH of them normally using partition (1).
+Another partition (2) is used for meta training, it uses the prediction results from base classifiers + true label from partition (2). **meta classifier learns that when DT = Yes, SVM = Yes, kNN = No, label = No/yes** from each combinations in base classifier results. 
+Instead of learning from original features, it learns from **which base model to trust** in which situation.
 ### Boosting
 ---
 - Training **n base classifiers** of the same type
