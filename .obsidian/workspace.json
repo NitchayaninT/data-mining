@@ -132,8 +132,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e3d67f66f144d629",
@@ -239,6 +238,7 @@
   "active": "3d9ddda269a03fec",
   "lastOpenFiles": [
     "Process/ch8/Regression.md",
+    "Process/ch9/Ensemble Methods.md",
     "Process/ch7/Performance Evaluation.md",
     "Process/ch5/Classification Methods 2.md",
     "pictures/sensitivity.png",
