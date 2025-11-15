@@ -68,8 +68,10 @@ This graph shows the error of the ensemble when we combine many base classifers 
 - Multi-class to binary classification
 ### Stacking
 Splits data into 2 partitions
+**Stacking** tries to **learn how to combine multiple models** (base classifiers) in a smart way
+**Example** : we have 3 base models (trained by Decision Tree, SVM,kNN). we trained EACH of them normally using partition (1)
 - **Base training**
-	- Use training partition (1) to train base classifiers
+	- Use **training partition (1)** to train base classifiers
 - **Meta training**
 	- Let each base classifier predict training partition (2)
 	- Use **prediction results by base classifiers** to train meta classifier
