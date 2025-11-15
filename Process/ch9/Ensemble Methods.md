@@ -59,12 +59,22 @@ This graph shows the error of the ensemble when we combine many base classifers 
 - **Ensemble methods involve training many base classifiers**
 	- Simple classifiers : Decision stump, OneR
 ## Ensemble Methods
-- Voting, Stacking
+- Voting : Majority vote
+- [Stacking](#stacking)
 - Bagging
 - Random forest
 - [Boosting (Adaboost)](#boosting)
 - Gradient boosting tree
 - Multi-class to binary classification
+### Stacking
+Splits data into 2 partitions
+- **Base training**
+	- Use training partition (1) to train base classifiers
+- **Meta training**
+	- Let each base classifier predict training partition (2)
+	- Use **prediction results by base classifiers** to train meta classifier
+	- Meta classifier learns prediction patterns of base classifiers that lead to the correct prediction
+	- Simple classifiers are often used as meta classifiers
 ### Boosting
 ---
 - Training **n base classifiers** of the same type
