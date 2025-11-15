@@ -69,7 +69,8 @@ This graph shows the error of the ensemble when we combine many base classifers 
 ### Stacking
 Splits data into 2 partitions
 **Stacking** tries to **learn how to combine multiple models** (base classifiers) in a smart way
-**Example** : we have 3 base models (trained by Decision Tree, SVM,kNN). we trained EACH of them normally using partition (1)
+**Example** : we have 3 base models (trained by Decision Tree, SVM,kNN). we trained EACH of them normally using partition (1).
+Another partition (2) is used for meta training, it uses the prediction results from base classifiers.
 - **Base training**
 	- Use **training partition (1)** to train base classifiers
 - **Meta training**
