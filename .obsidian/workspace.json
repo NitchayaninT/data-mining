@@ -67,12 +67,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Process/ch9/Ensemble Methods.md",
+                "file": "Process/ch3/Data Preprocessing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ensemble Methods"
+              "title": "Data Preprocessing"
             }
           },
           {
@@ -146,7 +146,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e3d67f66f144d629",
@@ -162,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rapid Miner.md",
+                "file": "Process/ch3/Data Preprocessing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +173,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Rapid Miner"
+              "title": "Backlinks for Data Preprocessing"
             }
           },
           {
@@ -229,8 +230,7 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -239,20 +239,20 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "82afdd93a122b1a3",
   "lastOpenFiles": [
-    "Process/ch8/Regression.md",
     "Process/ch9/Ensemble Methods.md",
+    "Process/ch8/Regression.md",
     "Process/ch7/Performance Evaluation.md",
     "Process/ch5/Classification Methods 2.md",
     "pictures/sensitivity.png",
