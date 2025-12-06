@@ -85,7 +85,7 @@ It measures **how much Y changes when X changes**, based on your data.
 - We use feature selection to **eliminate features with collinearity**
 ## Extensions of Classification Methods
 - [CART](#cart)
-- [SVR](#svr)
+- [SVR](#svr-:-support-vector-regression)
 ### CART
 **Classification and Regression Tree**
 CART outputs a decision tree where **leaf nodes are either classes** (classification) OR **numeric values** (regression), depending on the type of target variable Y
@@ -105,9 +105,12 @@ When target variable Y is numeric, CART builds a tree that **splits the dataset 
 	4. CART repeats this for **every possible split** and picks the one with the **lowest total SSE** from left and right.
 - **Average y in leaf node**
 	- Once the tree is grown and you reach a **leaf node**, the prediction for that leaf is
-		- Mean of all yi in that leaf
-	- 
-### SVR
+		- **"Mean of all yi in that leaf"**
+	- **Why average?** : Because for regression, the value that minimizes squared error for a set of data points is the **mean**.
+	- Every new data point that falls into this leaf is predicted as the mean of yi in that leaf
+### SVR : Support Vector Regression
+Linear regress : fit Y = f(X) that minimizes squared error
+SVR = **fit a hyperplane** that keeps points within an acceptable margin
 
 
 
