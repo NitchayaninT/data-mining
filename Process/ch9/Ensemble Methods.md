@@ -70,7 +70,7 @@ This graph shows the error of the ensemble when we combine many base classifers 
 ### Voting
 Train & test different classifiers (recommended to be odd), get performance
 Final prediction is based on majority vote
-- It uses Naive bayes, decision tree or rule induction to vote
+- Every model has the same weights, it just uses majority vote for each prediction
 ### Stacking
 Splits data into 2 partitions
 **Stacking** tries to **learn how to combine multiple models** (base classifiers) in a smart way
@@ -81,6 +81,7 @@ Splits data into 2 partitions
 	- Use **prediction results by base classifiers** to train meta classifier
 	- Meta classifier learns prediction patterns of base classifiers that lead to the correct prediction
 	- Simple classifiers are often used as meta classifiers
+	- each model has different weights
 	
 **Example** : we have 3 base models (trained by Decision Tree, SVM,kNN). we trained EACH of them normally using partition (1).
 Another partition (2) is used for meta training, it uses the prediction results from base classifiers + true label from partition (2). **meta classifier learns that when DT = Yes, SVM = Yes, kNN = No, label = No/yes** from each combinations in base classifier results. 
