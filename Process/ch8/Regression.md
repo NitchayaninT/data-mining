@@ -89,7 +89,12 @@ It measures **how much Y changes when X changes**, based on your data.
 ### CART
 **Classification and Regression Tree**
 CART outputs a decision tree where **leaf nodes are either classes** (classification) OR **numeric values** (regression), depending on the type of target variable Y
+
+When target variable Y is numeric, CART builds a tree that **splits the dataset into regions** so that **each region contains data with similar Y values**
 - **Least-square error splitting criterion**
+	- how CART decides where to split the data (at X > 10, X > )
+	- for each possible split (feature + split value), CART calculates 
+		- **SSE = (y-y hat)squared**, it picks the 
 - **Average y in leaf node**
 	- 
 ### SVR
