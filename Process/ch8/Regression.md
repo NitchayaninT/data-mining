@@ -76,14 +76,20 @@ It measures **how much Y changes when X changes**, based on your data.
 		- Not good for explaination. when 2 attributes change together, we may get **wrong conclusion** about the effect of each attribute on the target
 		- Cannot hold one attribute constant in order to control the effect of the other -> **result in unreliable model**, cuz while increasing A1, A2 also changes whenever A1 does so the model cannot tell which variable(feature) actually caused the change in y
 	- Multicollinearity means there are **>2 highly correlated attributes**
-	- Example : **A3 = 2A1 + 3A2+10**
-		- Meaning, A3 
+	- Example : **A₃ = 2A₁ + 3A₂+10**
+		- Meaning, A₃ is a **deterministic linear combination** of A₁ and A₂
+		- then A₃ has **no new information**, It is just a combination of A₁ and A₂.
 
 ![[Pasted image 20251113001930.png]]
 
 - We use feature selection to **eliminate features with collinearity**
 ## Extensions of Classification Methods
-- ### Classification and regression tree (CART)
-- ### SVR
-- ### Neural Network
+- [CART](#cart)
+- [SVR]()
+
+### CART
+### SVR
+
+
+
 ## Logistic Regression
