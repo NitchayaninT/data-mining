@@ -18,10 +18,6 @@
 		- example, when a1 increases by 1, target (y) increases (go up) by 31.736 (**the model’s predicted output value increases**.)
 - **How to obtain regression coefficients?** (slope, intercept)
 	- Among many possible lines, choose the one with the **smallest sum of squared (vertical) deviation** (lowest training error)
-	- For each data point : **Error(residual) = Y - Y hat**
-		- Y = actual value, Y hat = prediction value
-	- Then, **square the error = (Y-Y hat) squared**, to make the errors positive
-	- Then, find slopes (weights) that **minimize Sum of squared errors (SSE)**
 
 example 1, **predictor X and numeric target Y**
 - training data = (x1,y1),(x2,y2),...,(xn,yn)
@@ -33,10 +29,11 @@ example 1, **predictor X and numeric target Y**
 - Then divide by how much **X varies by itself** (variance of X).
 - That gives the **best-fit slope**.
 - Then compute the intercept so the line crosses the mean point.
+- Once we get the regression model, we use it to predict new values, compute residuals, SSE,MSE,RMSE
 
 - **Feature selection** can be applied during the **model fitting**
 	- Collinear attributes can be removed (attributes that give almost the same info)
-- **Residual (error)** = label - prediction(label)
+- **Residual (error)** for each data point, **error = y - prediction(y)**
 - **T-Stat and P-value** = statistical test on coefficient -> to confirm the significant of each attribute
 	- P-value close to 0 = **high significance**
 - **Tolerance** = indicates **collinearity** between each attribute and the others
