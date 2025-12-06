@@ -24,9 +24,12 @@ example 1, **predictor X and numeric target Y**
 
 ![[Pasted image 20251112233337.png]]
 **How to we solve for slope and intercept?** : Least squares formula
+- Using this formula is better and faster than trying all lines out, cuz this formula already gives us the one line that minimizes error
 ![[Pasted image 20251112233428.png]]
-- First compute how much **X and Y move together** (covariance).
+- First compute how much **X and Y move together** (covariance)
+	- If X increases and Y tends to increase → numerator is **positive** → slope is **positive**
 - Then divide by how much **X varies by itself** (variance of X).
+	- If X barely changes, you cannot fit a meaningful line → denominator is small.
 - That gives the **best-fit slope**.
 - Then compute the intercept so the line crosses the mean point.
 - Once we get the regression model, we use it to predict new values, compute residuals, SSE,MSE,RMSE
