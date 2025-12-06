@@ -85,9 +85,13 @@ It measures **how much Y changes when X changes**, based on your data.
 - We use feature selection to **eliminate features with collinearity**
 ## Extensions of Classification Methods
 - [CART](#cart)
-- [SVR]()
-
+- [SVR](#svr)
 ### CART
+**Classification and Regression Tree**
+CART outputs a decision tree where **leaf nodes are either classes** (classification) OR **numeric values** (regression), depending on the type of target variable Y
+- **Least-square error splitting criterion**
+- **Average y in leaf node**
+	- 
 ### SVR
 
 
