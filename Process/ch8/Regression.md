@@ -118,7 +118,11 @@ Not all points can be kept inside a margin (ε). Some are allowed to be outside 
 - Like SVM, penalty term is controlled by parameter C
 - Big C = high penalty, smaller margin. Small C = low penalty
 - BUT...why don't we just maximize the margin?
-	- Because the ε-tube is **not a margin between classes**, it is an "acceptable error tolerance" and not something to optimize
+	- Because the ε-tube is **not a margin between classes**, it is an "**acceptable error tolerance**" and not something to optimize
 	- the margin is used to ignore small errors (inside ε) and penalize big errors (outside ε)
 	- if margin is maximize, the model becomes a flat line (function does not change with x, no slope)
+	- Smaller margin = model fits tightly
+- After we get ε and C, we when produce slope and intercept to get regression line
+
 SVR can support nonlinear data via **kernel trick**
+- nonlinear = line is curved or hyperbola
