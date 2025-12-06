@@ -120,5 +120,5 @@ Not all points can be kept inside a margin (ε). Some are allowed to be outside 
 - BUT...why don't we just maximize the margin?
 	- Because the ε-tube is **not a margin between classes**, it is an "acceptable error tolerance" and not something to optimize
 	- the margin is used to ignore small errors (inside ε) and penalize big errors (outside ε)
-	- if margin is maximize, the model becomes a flat line
+	- if margin is maximize, the model becomes a flat line (function does not change with x, no slope)
 SVR can support nonlinear data via **kernel trick**
