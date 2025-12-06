@@ -68,6 +68,9 @@ This graph shows the error of the ensemble when we combine many base classifers 
 - Multi-class to binary classification
 
 ### Voting
+Train & test different classifiers (recommended to be odd), get performance
+Final prediction is based on majority vote
+
 
 ### Stacking
 Splits data into 2 partitions
@@ -94,7 +97,7 @@ Instead of learning from original features, it learns from **which base model to
 	- Calculate ***weight of this classifier (alpha)***. Low error = high alpha
 		- So classifiers with **higher α** influence the final decision more
 	- Update ***weight of training records***. Correctly predicted records get lower weights, misclassified points get higher weights
-		- **Why?** So that the _next classifier_ pays more attention to the “hard” cases (boosts weights, Next classifier must try harder to get lebel correctly, **fix the mistakes** of earlier ones). This make the records with high weight **APPEAR more often** in later rounds
+		- **Why?** So that the _next classifier_ pays more attention to the “hard” cases (boosts weights, Next classifier must try harder to get lebal correctly, **fix the mistakes** of earlier ones). This make the records with high weight **APPEAR more often** in later rounds
 }
 - Final prediction = ***weighted vote (by alpha)*** from n base classifiers
 
