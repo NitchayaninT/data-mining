@@ -59,13 +59,16 @@ This graph shows the error of the ensemble when we combine many base classifers 
 - **Ensemble methods involve training many base classifiers**
 	- Simple classifiers : Decision stump, OneR
 ## Ensemble Methods
-- Voting : Majority vote
-- [Stacking](#stacking)
-- Bagging
+- [Voting](#voting) : Majority vote : **>= 1 base classifiers**
+- [Stacking](#stacking) : **>= 1 base classifiers**
+- Bagging : **1 base classifier**
 - Random forest
-- [Boosting (Adaboost)](#boosting)
+- [Boosting (Adaboost)](#boosting) : **1 base classifier**
 - Gradient boosting tree
 - Multi-class to binary classification
+
+### Voting
+
 ### Stacking
 Splits data into 2 partitions
 **Stacking** tries to **learn how to combine multiple models** (base classifiers) in a smart way
