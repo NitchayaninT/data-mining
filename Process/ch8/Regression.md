@@ -95,14 +95,17 @@ When target variable Y is numeric, CART builds a tree that **splits the dataset 
 	- how CART decides where to split the data (at X > 10, X > 12, etc)
 	- for each possible split (feature + split value), CART calculates 
 		- **SSE = (y-y hat)squared**, where y hat is the prediction for that region
-	For each candidate split:
+	For each candidate split (eg. X > 10):
 	1. The data is divided into **left region** and **right region**
 	2. For each region, the prediction is the **mean y** of that region
 		- Calculate the **mean of actual y** in that region in order to get **"prediction y" OF that region**
 	3. CART computes the **SSE for left + right**
 		- SSE left/right = (y1 - mean y) squared +(y2 - mean y) squared + ...
-	4. It picks the split with the **lowest total SSE**
+		- get **total SSE** from left and right region
+	4. CART repeats this for **every possible split** and picks the one with the **lowest total SSE** from left and right.
 - **Average y in leaf node**
+	- Once the tree is grown and you reach a **leaf node**, the prediction for that leaf is
+		- Mean of all yi in that leaf
 	- 
 ### SVR
 
