@@ -146,3 +146,4 @@ Instead of fitting the model in the original input space, SVR:
 	- Kernel : creates a curved _decision boundary_.
 	- Support vectors : near boundary
 	- Margin : Maximize
+
