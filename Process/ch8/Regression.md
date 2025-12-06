@@ -110,8 +110,8 @@ When target variable Y is numeric, CART builds a tree that **splits the dataset 
 	- Every new data point that falls into this leaf is predicted as the mean of yi in that leaf
 ### SVR : Support Vector Regression
 Linear regress : fit Y = f(X) that minimizes squared error
-SVR = **fit a hyperplane** that keeps points within an acceptable margin
+SVR = **fit a hyperplane** that keeps points **within** an acceptable margin **ε**
 
+![[Pasted image 20251206124658.png]]
 
-
-## Logistic Regression
+Not all points can be kept inside a margin (ε). 
