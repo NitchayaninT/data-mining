@@ -18,6 +18,9 @@
 		- example, when a1 increases by 1, target (y) increases (go up) by 31.736 (**the model’s predicted output value increases**.)
 - **How to obtain regression coefficients?** (slope, intercept)
 	- Among many possible lines, choose the one with the **smallest sum of squared (vertical) deviation** (lowest training error)
+	- For each data point : **Error(residual) = Y - Y hat**
+		- Y = actual value, Y hat = prediction value
+	- 
 
 example 1, **predictor X and numeric target Y**
 
