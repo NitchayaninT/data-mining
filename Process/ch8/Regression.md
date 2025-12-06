@@ -23,9 +23,10 @@ example 1, **predictor X and numeric target Y**
 - training data = (x1,y1),(x2,y2),...,(xn,yn)
 
 ![[Pasted image 20251112233337.png]]
-**How to we solve for slope and intercept?** : Least squares formula
+**How to we solve for slope and intercept?** : ==Least squares formula==
 - Using this formula is better and faster than trying all lines out, cuz this formula already gives us the one line that minimizes error
 ![[Pasted image 20251112233428.png]]
+It measures **how much Y changes when X changes**, based on your data.
 - First compute how much **X and Y move together** (covariance)
 	- If X increases and Y tends to increase → numerator is **positive** → slope is **positive**
 - Then divide by how much **X varies by itself** (variance of X).
