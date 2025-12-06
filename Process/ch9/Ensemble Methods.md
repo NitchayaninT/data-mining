@@ -84,9 +84,10 @@ Splits data into 2 partitions
 	- each model has different weights
 	
 **Example** : we have 3 base models (trained by Decision Tree, SVM,kNN). we trained EACH of them normally using partition (1).
-Another partition (2) is used for meta training, it uses the prediction results from base classifiers + true label from partition (2).
+Another partition (2) is used for meta training, it uses the **prediction results from base classifiers** + **true label from partition (2)**.
 - **meta classifier learns that when DT = Yes, SVM = Yes, kNN = No, then label = No/yes** from each combinations in base classifier results. 
-- It can also learn nonlinear interactions like if SVM=Yes, Knn=No, DT probability < 0.6, label = No
+- It can also learn nonlinear interactions like if **SVM=Yes, Knn=No, DT probability < 0.6, label = No**
+- It learns like **“SVM is always right; DT sometimes; kNN useless.”**
 - It uses decision tree or rule induction as meta classifier
 Instead of learning from original features, it learns from **which base model to trust** in which situation.
 ### Boosting
