@@ -70,8 +70,7 @@ This graph shows the error of the ensemble when we combine many base classifers 
 ### Voting
 Train & test different classifiers (recommended to be odd), get performance
 Final prediction is based on majority vote
-
-
+- It uses Naive bayes, decision tree or rule induction to vote
 ### Stacking
 Splits data into 2 partitions
 **Stacking** tries to **learn how to combine multiple models** (base classifiers) in a smart way
