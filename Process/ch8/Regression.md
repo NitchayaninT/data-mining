@@ -29,6 +29,10 @@ example 1, **predictor X and numeric target Y**
 ![[Pasted image 20251112233337.png]]
 **How to we solve for slope and intercept?**
 ![[Pasted image 20251112233428.png]]
+- First compute how much **X and Y move together** (covariance).
+- Then divide by how much **X varies by itself** (variance of X).
+- That gives the **best-fit slope**.
+- Then compute the intercept so the line crosses the mean point.
 
 - **Feature selection** can be applied during the **model fitting**
 	- Collinear attributes can be removed (attributes that give almost the same info)
