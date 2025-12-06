@@ -24,6 +24,7 @@
 	- Then, find slopes (weights) that **minimize Sum of squared errors (SSE)**
 
 example 1, **predictor X and numeric target Y**
+- training data = (x1,y1),(x2,y2),...,(xn,yn)
 
 ![[Pasted image 20251112233337.png]]
 
