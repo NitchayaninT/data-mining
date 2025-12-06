@@ -20,7 +20,8 @@
 	- Among many possible lines, choose the one with the **smallest sum of squared (vertical) deviation** (lowest training error)
 	- For each data point : **Error(residual) = Y - Y hat**
 		- Y = actual value, Y hat = prediction value
-	- 
+	- Then, **square the error = (Y-Y hat) squared**, to make the errors positive
+	- Then, find slopes (weights) that **minimize Sum of squared errors (SSE)**
 
 example 1, **predictor X and numeric target Y**
 
