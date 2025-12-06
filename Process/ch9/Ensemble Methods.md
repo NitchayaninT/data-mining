@@ -82,7 +82,8 @@ Splits data into 2 partitions
 	- Meta classifier learns **prediction patterns of base classifiers that lead to the correct prediction**
 	- Simple classifiers are often used as meta classifiers
 	- each model has different weights
-	
+After this, apply rule model to testing data
+
 **Example** : we have 3 base models (trained by Decision Tree, SVM,kNN). we trained EACH of them normally using partition (1).
 Another partition (2) is used for meta training, it uses the **prediction results from base classifiers** + **true label from partition (2)**.
 - It uses decision tree or rule induction as meta classifier
@@ -90,7 +91,7 @@ Another partition (2) is used for meta training, it uses the **prediction result
 Instead of learning from original features, it learns from **which base model to trust** in which situation.
 ![[Pasted image 20251206160234.png]]
 
-- 
+Rule model example : **if base_confidence_yes0 <= 0.229, then predict no**
 ### Boosting
 ---
 - Training **n base classifiers** of the same type
