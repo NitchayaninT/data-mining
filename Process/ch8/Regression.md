@@ -114,4 +114,8 @@ SVR = **fit a hyperplane** that keeps points **within** an acceptable margin **�
 
 ![[Pasted image 20251206124658.png]]
 
-Not all points can be kept inside a margin (ε). Some are allowed to be outside the margin WITH s
+Not all points can be kept inside a margin (ε). Some are allowed to be outside the margin WITH some penalty -> we have to **MINIMIZE total penalty**
+- Like SVM, penalty term is controlled by parameter C
+- Big C = high penalty, smaller margin. Small C = low penalty
+- BUT...why don't we just max
+SVR can support nonlinear data via **kernel trick**
