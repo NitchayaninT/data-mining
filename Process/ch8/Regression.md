@@ -130,7 +130,7 @@ Instead of fitting the model in the original input space, SVR:
 1. **Maps the data into a higher-dimensional space** 
 	- eg : transform x -> f(x) where f(x) = x^2
 	- now y = f(x), relationship becomes linear. but **its slow and impossible**
-	- Instead of computing f(x) explicitly,  compute the dot product between data points **directly** in the high-dimensional space using a kernel function.
-	- This dot product measures **similarity** between the points in the high-dimensional space
+	- Instead of computing f(x) explicitly, compute the dot product between data points **directly** in the high-dimensional space using a kernel function.
+	- This dot product measures **similarity** between the points in the high-dimensional space. SVR uses this similarity to decide which points become **support vectors**
 2. Fits a linear SVR in that high-dimensional space
 3. That linear model corresponds to a **nonlinear curve** in the original space.
