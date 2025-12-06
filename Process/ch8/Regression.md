@@ -49,6 +49,7 @@ It measures **how much Y changes when X changes**, based on your data.
 	- **Root of mean squared error (RMSE)**
 		- Average error
 		- Most common metric
+		- 0 = perfect model. values increase as model error grows
 
 ![[Pasted image 20251113000115.png]]
 
@@ -139,11 +140,13 @@ Instead of fitting the model in the original input space, SVR:
 - SVR (regression)
 	- ε-tube defines the region where error is ignored
 	- Kernel : creates a curved _regression function_
-	- Support vectors : outside ε-tube
+	- Support vectors : outside or on ε-tube
 	- Margin : ε-tube fixed by user
 - SVM (classification)
 	- Margin width is determined by data + optimization.
 	- Kernel : creates a curved _decision boundary_.
 	- Support vectors : near boundary
 	- Margin : Maximize
+
+
 
