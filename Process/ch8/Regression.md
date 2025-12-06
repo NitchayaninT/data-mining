@@ -134,3 +134,15 @@ Instead of fitting the model in the original input space, SVR:
 	- This dot product measures **similarity** between the points in the high-dimensional space. SVR uses this similarity to decide which points become **support vectors**
 2. Fits a linear SVR **in that high-dimensional space**
 3. That linear model corresponds to a **nonlinear curve** in the original space.
+
+**SVR vs SVM**
+- SVR (regression)
+	- ε-tube defines the region where error is ignored
+	- Kernel : creates a curved _regression function_
+	- Support vectors : outside ε-tube
+	- Margin : ε-tube fixed by user
+- SVM (classification)
+	- Margin width is determined by data + optimization.
+	- Kernel : creates a curved _decision boundary_.
+	- Support vectors : near boundary
+	- Margin : Maximize
