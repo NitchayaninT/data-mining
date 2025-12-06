@@ -52,6 +52,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Process/ch8/Regression.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -61,7 +62,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Regression"
             }
           }
         ]
@@ -205,7 +206,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7f9a9456e2dcc88b",
+  "active": "c4a2fff6c55b868c",
   "lastOpenFiles": [
     "Process/ch8/Regression.md",
     "Process/ch13/Association Analysis.md",
