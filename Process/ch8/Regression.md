@@ -23,7 +23,7 @@ example 1, **predictor X and numeric target Y**
 - training data = (x1,y1),(x2,y2),...,(xn,yn)
 
 ![[Pasted image 20251112233337.png]]
-**How to we solve for slope and intercept?**
+**How to we solve for slope and intercept?** : Least squares formula
 ![[Pasted image 20251112233428.png]]
 - First compute how much **X and Y move together** (covariance).
 - Then divide by how much **X varies by itself** (variance of X).
