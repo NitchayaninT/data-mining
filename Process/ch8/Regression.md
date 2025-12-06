@@ -127,6 +127,6 @@ Not all points can be kept inside a margin (ε). Some are allowed to be outside 
 SVR can support nonlinear data via **kernel trick**
 - nonlinear = line is **not a straight line anymore**
 Instead of fitting the model in the original input space, SVR:
-1.  **Maps the data into a higher-dimensional space**  
-2. Fits a linear SVR in that high-dimensional space**
+1. **Maps the data into a higher-dimensional space**  
+2. Fits a linear SVR in that high-dimensional space
 3. That linear model corresponds to a **nonlinear curve** in the original space.
