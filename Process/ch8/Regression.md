@@ -98,7 +98,9 @@ When target variable Y is numeric, CART builds a tree that **splits the dataset 
 	For each candidate split:
 	1. The data is divided into **left region** and **right region**
 	2. For each region, the prediction is the **mean y** of that region
+		- Calculate the **mean of actual y** in that region in order to get **"prediction y" OF that region**
 	3. CART computes the **SSE for left + right**
+		- SSE left/right = (y1 - mean y) squared +(y2 - mean y) squared + ...
 	4. It picks the split with the **lowest total SSE**
 - **Average y in leaf node**
 	- 
