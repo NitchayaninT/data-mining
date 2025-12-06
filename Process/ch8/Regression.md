@@ -114,4 +114,4 @@ SVR = **fit a hyperplane** that keeps points **within** an acceptable margin **�
 
 ![[Pasted image 20251206124658.png]]
 
-Not all points can be kept inside a margin (ε). 
+Not all points can be kept inside a margin (ε). Some are allowed to be outside the margin WITH s
