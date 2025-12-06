@@ -1,7 +1,7 @@
 # Regression
 - **Numeric Prediction**
 	- **Linear Regression**
-	- Extensions of Classification methods
+	- **Extensions of Classification methods**
 		- Classification and regression tree (CART)
 		- SVR
 		- Neural network
