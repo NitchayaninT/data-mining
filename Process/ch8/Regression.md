@@ -69,8 +69,9 @@ It measures **how much Y changes when X changes**, based on your data.
 		- r = +1 means perfect positive linear relationship
 		- r = 0 means no linear relationship
 	- Multiple coefficient of **determination** (0<=**R^2**<=1)
-		- Tell how much variation in Y can be explained by the model
-		- or how well the regression model fits the data
+		- Tell how well **all predictors together** explain Y
+		- 0 = model explains 0% of the variation in Y. 
+		- 1 = excellent fit but could be overfitting if too many predictors
 - **Collinearity** ***
 	- when **one feature can be linearly predicted from one or more other features** with a high degree of accuracy
 	- Any 2 attributes in the model are highly correlated or **having linear relationship with each other******
