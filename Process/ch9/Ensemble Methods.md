@@ -79,7 +79,7 @@ Splits data into 2 partitions
 - **Meta training**
 	- Let each base classifier predict training partition (2)
 	- Use **prediction results by base classifiers** to train meta classifier
-	- Meta classifier learns prediction patterns of base classifiers that lead to the correct prediction
+	- Meta classifier learns **prediction patterns of base classifiers that lead to the correct prediction**
 	- Simple classifiers are often used as meta classifiers
 	- each model has different weights
 	
@@ -88,6 +88,9 @@ Another partition (2) is used for meta training, it uses the **prediction result
 - It uses decision tree or rule induction as meta classifier
 - meta classifier **contain attributes that are prediction results from base classifiers**
 Instead of learning from original features, it learns from **which base model to trust** in which situation.
+![[Pasted image 20251206160234.png]]
+
+- 
 ### Boosting
 ---
 - Training **n base classifiers** of the same type
