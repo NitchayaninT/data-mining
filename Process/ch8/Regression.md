@@ -92,9 +92,14 @@ CART outputs a decision tree where **leaf nodes are either classes** (classifica
 
 When target variable Y is numeric, CART builds a tree that **splits the dataset into regions** so that **each region contains data with similar Y values**
 - **Least-square error splitting criterion**
-	- how CART decides where to split the data (at X > 10, X > )
+	- how CART decides where to split the data (at X > 10, X > 12, etc)
 	- for each possible split (feature + split value), CART calculates 
-		- **SSE = (y-y hat)squared**, it picks the 
+		- **SSE = (y-y hat)squared**, where y hat is the prediction for that region
+	For each candidate split:
+	1. The data is divided into **left region** and **right region**
+	2. For each region, the prediction is the **mean y** of that region
+	3. CART computes the **SSE for left + right**
+	4. It picks the split with the **lowest total SSE**
 - **Average y in leaf node**
 	- 
 ### SVR
