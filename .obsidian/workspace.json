@@ -4,26 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "481236b6a7dfb3f3",
-        "type": "tabs",
-        "dimension": 19.230769230769234,
-        "children": [
-          {
-            "id": "7f9a9456e2dcc88b",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          }
-        ]
-      },
-      {
         "id": "6a4c0526e2034656",
         "type": "tabs",
-        "dimension": 61.53846153846154,
         "children": [
           {
             "id": "c4a2fff6c55b868c",
@@ -37,32 +19,6 @@
               },
               "icon": "lucide-file",
               "title": "Regression"
-            }
-          }
-        ]
-      },
-      {
-        "id": "ea2f9b184f474d0d",
-        "type": "tabs",
-        "dimension": 19.230769230769234,
-        "children": [
-          {
-            "id": "c02bc646a4b30b6f",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Process/ch8/Regression.md",
-                "collapseAll": true,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Regression"
             }
           }
         ]
@@ -123,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 353.5
   },
   "right": {
     "id": "e3d67f66f144d629",
