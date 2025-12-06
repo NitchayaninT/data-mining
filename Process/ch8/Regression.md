@@ -29,11 +29,12 @@ example 1, **predictor X and numeric target Y**
 It measures **how much Y changes when X changes**, based on your data.
 - First compute how much **X and Y move together** (covariance)
 	- If X increases and Y tends to increase → numerator is **positive** → slope is **positive**
+	- For every +1 increase in X, we predict Y increases/decreases by about .....
 - Then divide by how much **X varies by itself** (variance of X).
 	- If X barely changes, you cannot fit a meaningful line → denominator is small.
 - That gives the **best-fit slope**.
 - Then compute the intercept so the line crosses the mean point.
-- Once we get the regression model, we use it to predict new values, compute residuals, SSE,MSE,RMSE
+- Once we get the regression model, we use it to predict new values, **compute residuals,** SSE,MSE,RMSE
 
 - **Feature selection** can be applied during the **model fitting**
 	- Collinear attributes can be removed (attributes that give almost the same info)
@@ -69,13 +70,14 @@ It measures **how much Y changes when X changes**, based on your data.
 	- Multiple coefficient of **determination** (0<=**R^2**<=1)
 		- Tell how much variation in Y can be explained by the model
 		- or how well the regression model fits the data
-- **Collinearity**
+- **Collinearity** ***
 	- when **one feature can be linearly predicted from one or more other features** with a high degree of accuracy
 	- Any 2 attributes in the model are highly correlated or **having linear relationship with each other******
 		- Not good for explaination. when 2 attributes change together, we may get **wrong conclusion** about the effect of each attribute on the target
 		- Cannot hold one attribute constant in order to control the effect of the other -> **result in unreliable model**, cuz while increasing A1, A2 also changes whenever A1 does so the model cannot tell which variable(feature) actually caused the change in y
 	- Multicollinearity means there are **>2 highly correlated attributes**
 	- Example : **A3 = 2A1 + 3A2+10**
+		- Meaning, A3 
 
 ![[Pasted image 20251113001930.png]]
 
