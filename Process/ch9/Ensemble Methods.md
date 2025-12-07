@@ -170,7 +170,13 @@ From multi-class -> binary classification
 - **1-against-1**
 - **1-against-all**
 #### 1-against-1
-Train binary classifier to distinguish between each pair of classes
-
-
+Train binary classifier to distinguish **between each pair of classes**
+C1-C2, C1-C3, C1-C4, C2-C3, C2-C4, C3-C4 (all possible combinations)
+- when training each binary classifier, irrelevant records from other classes are ignored
+- Then, let **all binary classifiers predict a new record**
+	- Eg : Prediction = (C1,C1,C1,C3,C2,C3)
+	- Using majority vote, final pred = C1
+	- or compare avg prediction confidence of C1,C2,C3,C4 and choose the one with **highest confidence**
 #### 1-against-all
+Train binary classifier to predict whether records belong to a class or the others
+- C1-others, C2-others, C3-others, C4-others
