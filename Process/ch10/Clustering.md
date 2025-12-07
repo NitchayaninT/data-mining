@@ -52,5 +52,6 @@ Using PCA fixes this.
  It is calculated by summing the squared distances **between each data point and the centroid** (mean point) of the cluster to which it has been assigned.
 	- Objective = **minimize SSE**, data points are more compacted within the cluster
 	- Average within-cluster distance = **sqrt(SSE)/K**
-- **Davies-Boundin Index (DBI)**
-	- 
+- **Davies-Bouldin Index (DBI)**
+ ==a metric for evaluating the quality of a clustering algorithm's results==. It is an internal validation scheme that measures **how well the clusters are separated** and **how compact they are**. A **lower DBI value indicates a better clustering solution**.
+ - Rij = Ratio between cohesion & separation between clusters i and j
