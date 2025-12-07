@@ -186,6 +186,9 @@ Train binary classifier to predict **whether records belong to a class or the ot
 - Using majority vote, final prediction = C1, or choose class with highest prediction confidence
 ### Comparison
 In many cases, their performance are similar
-- One against one requires n(n-1)/2 classifiers for n classes
+- One against one **requires n(n-1)/2 classifiers** for n classes
 	- Training is more computationally expensive
-	- More robust to class imbalance
+	- More robust to class imbalance (we consider only 2 classes at a time)
+- One against all **requires only n classifiers for n classes**
+	- **Faster training** (especially when n is big)-> more popular
+	- But more sensitive to class imbalance problem -> when classifying a very small class against all the others 
