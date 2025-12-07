@@ -63,7 +63,7 @@ This graph shows the error of the ensemble when we combine many base classifers 
 - [Stacking](#stacking) : **>= 1 base classifiers**
 - [Bagging](#bagging) : **1 base classifier**
 - [Boosting (Adaboost)](#boosting) : **1 base classifier**
-- Multi-class handling : 1-against-1, 1-against-all
+- [Multi-class handling](#multi-class-handling): 1-against-1, 1-against-all
 
 ### Voting
 Train & test different classifiers (recommended to be odd), get performance
@@ -164,3 +164,8 @@ Prediction by base classifiers
 **x = 0.4** -> y = -0.4236-0.6625+0.7315 -> **class -**
 **x = 0.8** -> y = -0.4236+0.6625+0.7315 -> **class +**
 
+### Multi-class handling
+From multi-class -> binary classification
+**Why use binary instead** ? :
+- **1-against-1**
+- **1-against-all**
