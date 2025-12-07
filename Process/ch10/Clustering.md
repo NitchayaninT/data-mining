@@ -11,7 +11,11 @@
 ## Preprocessing
 ### Normalization
 - distance-based
+- PCA works by analyzing variance, Features with large numeric scales dominate PCA, so need to do normalization before PCA
 ### PCA
+PCA does **two things at the same time**
+1. **Finds directions with the highest variance** (captures most info)
+2. **Ensures each direction is uncorrelated (orthogonal) to all previous ones**
 PCA (Principal Component Analysis) is a **dimensionality reduction technique** and helps us to **reduce the number of features in a dataset** while **keeping the most important information.** It changes complex datasets by transforming correlated features into a **smaller set of uncorrelated components.**
 ![[Pasted image 20251207161949.png]]
 
