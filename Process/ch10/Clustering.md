@@ -12,6 +12,7 @@
 ### Normalization
 - distance-based
 - PCA works by analyzing variance, Features with large numeric scales dominate PCA, so need to do normalization before PCA
+- And its also needed before distance-calculations like K-means
 ### PCA
 PCA does **two things at the same time**
 1. **Finds directions with the highest variance** (captures most info, cuz variance = how much data spread out/changes)
@@ -33,7 +34,15 @@ Using PCA fixes this.
 ## K-Means
 - Find K-clusters that are represented by centroids
 **Process**
-- Select K data points as initial records
+- Select K data points as initial centroids
 - For each cycle
 	- For each data point X
-		1. Calculate the distance 
+		1. Calculate the distance from X to each centroid
+		2. Assign X to the closet centroid
+	- Complete 1 cycle, all points are put in clusters -> update centroids
+	- **Calculate SSE, DBI**
+- until stopping criteria (centroids are stable, SSE or DBI is stable)
+- cycles completed
+### Measurements
+- Use Euclidean distance to calculate distances
+- **Centroid = mean of all points** in the cluster
