@@ -82,9 +82,9 @@ Splits data into 2 partitions
 	- Meta classifier learns **prediction patterns of base classifiers that lead to the correct prediction**
 	- Simple classifiers are often used as meta classifiers
 	- each model has different weights
-After this, **apply base models** to predict on test data
-These predictions -> meta-features
-Then use meta classifiers to predict final output
+After this, **apply base models** to predict on **test data**
+These predictions -> **meta-features**
+Then use **meta classifiers** to predict final output
 
 **Example** : we have 3 base models (trained by Decision Tree, SVM,kNN). we trained EACH of them normally using partition (1).
 Another partition (2) is used for meta training, it uses the **prediction results from base classifiers** + **true label from partition (2)**.
