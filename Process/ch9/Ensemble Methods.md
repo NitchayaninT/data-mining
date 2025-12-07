@@ -166,6 +166,11 @@ Prediction by base classifiers
 
 ### Multi-class handling
 From multi-class -> binary classification
-**Why use binary instead** ? :
+**Why use binary instead** ? : some methods only support binary classification (SVM, Logistic regress), class imbalance (some class has more members), classifying too many classes can lead to poor accuracy
 - **1-against-1**
 - **1-against-all**
+#### 1-against-1
+Train binary classifier to distinguish between each pair of classes
+
+
+#### 1-against-all
