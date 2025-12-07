@@ -103,14 +103,12 @@ For each **base classifier training**
 - **Some records are chosen many times** while some are never chosen (cuz bootstrap sampling is random)
 - On average, each bootstrap contains about 63% of original data (according to probability calculation)
 
-**Example**  : Given original data
+**Example** **Bagging** : Given original data
+Sampling with replacement : some records are chosen at many times/some not at all. It uses the same classifier type, but not with the same training data
 ![[Pasted image 20251207140158.png]]
+![[Pasted image 20251207140524.png]]
 
-Suppose we use decision tree & binary split only
-Single Classifier
-- **Classifier 1** : if(x<=0.35) then + else -
-	- Accuracy on training data = 70%
-- Classifier 2 : if(x<=)
+
 ### Boosting
 ---
 - Training **n base classifiers** of the same type
