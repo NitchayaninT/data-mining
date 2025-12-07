@@ -194,4 +194,6 @@ In many cases, their performance are similar
 	- But more sensitive to class imbalance problem -> when classifying a very small class against all the others 
 ## Summary
 - Voting & Stacking : supports different classifiers
-- Bagging & Boosting : are useful when the classification is susceptible to data variation
+- Bagging & Boosting : are useful when the classification is susceptible to **data variation**
+	- Base classifiers are trained from **different subsets of data** (different focus yields different bias) -> data variation is **neutralized by ensemble decision**
+	- Boosting can handle hard-to-predict data & thus correct mistakes by previous base classifiers. but the model is more likely to be overfitting
