@@ -77,7 +77,8 @@ d12 = distance from point 1-2
 **Centroid in K-Means**
 - avg of x = 8.2, avg of y = 10.7
 - centroid = (8.2, 10.7), imaginary
-- sensitive of outliers because 
+- sensitive of outliers because **outliers pull centroid away** from where they should be
 **Centroid in K-Medoids**
 - avg of distance from each point (obj) to all other points in within the cluster
 - Choose **object 2** as centroid since it has the **min avg distance out of all points**, meaning its likely to be at the center of the cluster
+- More robust to outliers because outliers are far from other points & **will never be picked as centroids** , cuz we pick the lowest mean distance
