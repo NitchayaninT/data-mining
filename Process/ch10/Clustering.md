@@ -49,8 +49,8 @@ Using PCA fixes this.
 	- centroid = (mean of A1, mean of A2, ... mean of Am)
 - **SSE = Sum of squared error**
 ![[Pasted image 20251207165335.png]]
-measure the difference between the observed data points and the values predicted by a statistical model.
-	- Objective = **minimize SSE**
-	- Average within-cluster distance = sqrt(SSE)/K
+ It is calculated by summing the squared distances **between each data point and the centroid** (mean point) of the cluster to which it has been assigned.
+	- Objective = **minimize SSE**, data points are more compacted within the cluster
+	- Average within-cluster distance = **sqrt(SSE)/K**
 - **Davies-Boundin Index (DBI)**
 	- 
