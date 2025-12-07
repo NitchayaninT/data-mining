@@ -39,7 +39,7 @@ Using PCA fixes this.
 	- For each data point X
 		1. Calculate the **Euclidean distance** from X to **each centroid**
 		2. Assign X to the **closest centroid**
-	- Complete 1 cycle, all points are put in clusters -> **update centroids** by calculating the **mean of all points within the cluster** (centroid is an imaginary point)
+	- Complete 1 cycle, all points are put in clusters -> **update centroids** by calculating the **mean of all points within the cluster** (centroid is an **imaginary** point)
 	- **Calculate SSE, DBI**
 - until stopping criteria (centroids are stable, SSE or DBI is stable)
 - cycles completed
@@ -66,4 +66,13 @@ Using PCA fixes this.
 	- **DBI = (sum of Di for all clusters)/ K**
 - **Objective** = minimize DBI
 ## K-Medoids
-Calculate average distance from each point to all other points 
+Calculate average distance **from each point to all other points within the cluster**
+**New centroid** = point with min avg distance 
+Centroid is the **best actual point** in the cluster
+### K-Means VS K-Medoids
+X = Avg X
+Y = Avg Y
+d12 = distance from point 1-2
+![[Pasted image 20251207174146.png]]
+
+
