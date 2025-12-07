@@ -178,5 +178,14 @@ C1-C2, C1-C3, C1-C4, C2-C3, C2-C4, C3-C4 (all possible combinations)
 	- Using majority vote, final pred = C1
 	- or compare avg prediction confidence of C1,C2,C3,C4 and choose the one with **highest confidence**
 #### 1-against-all
-Train binary classifier to predict whether records belong to a class or the others
+Train binary classifier to predict **whether records belong to a class or the others**
 - C1-others, C2-others, C3-others, C4-others
+- Then, let all binary classifier predict a new record
+- Eg : **predictions = (C1, others, others, others)**
+![[Pasted image 20251207144959.png]]
+- Using majority vote, final prediction = C1, or choose class with highest prediction confidence
+### Comparison
+In many cases, their performance are similar
+- One against one requires n(n-1)/2 classifiers for n classes
+	- Training is more computationally expensive
+	- More robust to class imbalance
