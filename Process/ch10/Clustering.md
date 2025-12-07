@@ -70,9 +70,14 @@ Calculate average distance **from each point to all other points within the clus
 **New centroid** = point with min avg distance 
 Centroid is the **best actual point** in the cluster
 ### K-Means VS K-Medoids
-X = Avg X
-Y = Avg Y
+Example : these objects are in the same cluster
 d12 = distance from point 1-2
 ![[Pasted image 20251207174146.png]]
 
-
+**Centroid in K-Means**
+- avg of x = 8.2, avg of y = 10.7
+- centroid = (8.2, 10.7), imaginary
+- sensitive of outliers because 
+**Centroid in K-Medoids**
+- avg of distance from each point (obj) to all other points in within the cluster
+- Choose **object 2** as centroid since it has the **min avg distance out of all points**, meaning its likely to be at the center of the cluster
