@@ -100,7 +100,7 @@ For each **base classifier training**
 **Final prediction** : by majority vote (or avg prediction confidence) from n base classifiers
 **Sampling with replacement** : 
 - Some records are chosen many times while some are never chosen
-- 
+- On average, each bootstrap contains about 63% of original data (according to probability calculation)
 ### Boosting
 ---
 - Training **n base classifiers** of the same type
