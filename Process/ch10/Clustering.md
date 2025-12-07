@@ -39,10 +39,18 @@ Using PCA fixes this.
 	- For each data point X
 		1. Calculate the distance from X to each centroid
 		2. Assign X to the closet centroid
-	- Complete 1 cycle, all points are put in clusters -> update centroids
+	- Complete 1 cycle, all points are put in clusters -> **update centroids**
 	- **Calculate SSE, DBI**
 - until stopping criteria (centroids are stable, SSE or DBI is stable)
 - cycles completed
 ### Measurements
 - Use Euclidean distance to calculate distances
 - **Centroid = mean of all points** in the cluster
+	- centroid = (mean of A1, mean of A2, ... mean of Am)
+- **SSE = Sum of squared error**
+![[Pasted image 20251207165335.png]]
+measure the difference between the observed data points and the values predicted by a statistical model.
+	- Objective = **minimize SSE**
+	- Average within-cluster distance = sqrt(SSE)/K
+- **Davies-Boundin Index (DBI)**
+	- 
