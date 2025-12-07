@@ -60,3 +60,6 @@ Using PCA fixes this.
  ![[Pasted image 20251207171359.png]]
 
 - **We want the ratio to be small** -> objects in the same clusters are close to each other (cohesion) and clusters are well separated (separation)
+- Worst case scenario for cluster i is to consider the **maximum Rij**
+	- Di = max{Rij}; considering all other clusters j
+- For K-clusters 
