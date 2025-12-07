@@ -192,3 +192,6 @@ In many cases, their performance are similar
 - One against all **requires only n classifiers for n classes**
 	- **Faster training** (especially when n is big)-> more popular
 	- But more sensitive to class imbalance problem -> when classifying a very small class against all the others 
+## Summary
+- Voting & Stacking : supports different classifiers
+- Bagging & Boosting : are useful when the classification is susceptible to data variation
