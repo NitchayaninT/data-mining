@@ -34,11 +34,11 @@ Using PCA fixes this.
 ## K-Means
 - Find K-clusters that are represented by centroids
 **Process**
-- Select K data points as initial centroids
+- Select K data points (in RANDOM) as initial centroids
 - For each cycle
 	- For each data point X
-		1. Calculate the distance from X to each centroid
-		2. Assign X to the closet centroid
+		1. Calculate the euclidean distance from X to each centroid
+		2. Assign X to the closest centroid
 	- Complete 1 cycle, all points are put in clusters -> **update centroids**
 	- **Calculate SSE, DBI**
 - until stopping criteria (centroids are stable, SSE or DBI is stable)
@@ -62,4 +62,7 @@ Using PCA fixes this.
 - **We want the ratio to be small** -> objects in the same clusters are close to each other (cohesion) and clusters are well separated (separation)
 - Worst case scenario for cluster i is to consider the **maximum Rij**
 	- Di = max{Rij}; considering all other clusters j
-- For K-clusters 
+- For K-clusters :
+	- **DBI = (sum of Di for all clusters)/ K**
+- **Objective** = minimize DBI
+
