@@ -47,11 +47,16 @@ Using PCA fixes this.
 - Use Euclidean distance to calculate distances
 - **Centroid = mean of all points** in the cluster
 	- centroid = (mean of A1, mean of A2, ... mean of Am)
+	
 - **SSE = Sum of squared error**
 ![[Pasted image 20251207165335.png]]
  It is calculated by summing the squared distances **between each data point and the centroid** (mean point) of the cluster to which it has been assigned.
 	- Objective = **minimize SSE**, data points are more compacted within the cluster
 	- Average within-cluster distance = **sqrt(SSE)/K**
+	
 - **Davies-Bouldin Index (DBI)**
  ==a metric for evaluating the quality of a clustering algorithm's results==. It is an internal validation scheme that measures **how well the clusters are separated** and **how compact they are**. A **lower DBI value indicates a better clustering solution**.
- - Rij = Ratio between cohesion & separation between clusters i and j
+ - Rij = Ratio between **cohesion & separation** of clusters i and j
+ ![[Pasted image 20251207171359.png]]
+
+- **We want the ratio to be small** -> objects in the same clusters are close to each other (cohesion) and clusters are well separated (separation)
