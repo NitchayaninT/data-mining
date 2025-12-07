@@ -63,7 +63,7 @@ This graph shows the error of the ensemble when we combine many base classifers 
 - [Stacking](#stacking) : **>= 1 base classifiers**
 - [Bagging](#bagging) : **1 base classifier**
 - [Boosting (Adaboost)](#boosting) : **1 base classifier**
-- Multi-class to binary classification
+- Multi-class handling : 1-against-1, 1-against-all
 
 ### Voting
 Train & test different classifiers (recommended to be odd), get performance
@@ -93,7 +93,14 @@ Instead of learning from original features, it learns from **which base model to
 - Those confidence values **come directly from each base classifier**
 Rule model example : **if base_confidence_yes0 <= 0.229, then predict no**
 ### Bagging
-
+Manipulate training data, training n base classifiers of the **same type**
+For each **base classifier training**
+1. Create training data or bootstrap by **sampling with replacement**
+2. Use training data to train base classifier
+**Final prediction** : by majority vote (or avg prediction confidence) from n base classifiers
+**Sampling with replacement** : 
+- Some records are chosen many times while some are never chosen
+- 
 ### Boosting
 ---
 - Training **n base classifiers** of the same type
