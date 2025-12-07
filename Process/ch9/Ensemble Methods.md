@@ -130,7 +130,7 @@ Prediction by base classifiers
 ***Weighted sampling with replacement***
 - Records with higher weights (the ones that get wrong prediction) will be sampled more often
 - The next base classifiers focus more on hard-to-predict records
-- But **it doesnt mean later classifers are better** overall because they may be too focused on certain records, **so the prediction from each classifier is weighted by α**
+- But **it doesnt mean later classifiers are better** overall because they may be too focused on certain records, **so the prediction from each classifier is weighted by α**
 ### Example Boosting
 ---
 **Given the same original data**
