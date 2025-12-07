@@ -23,6 +23,7 @@ PCA (Principal Component Analysis) is a **dimensionality reduction technique** a
 	- Dimensionality is lower → **clusters become more separated**
 	- Noise is removed → fewer false clusters
 K-means uses **Euclidean distance**.  
-If features are correlated, distance becomes distorted.  
+- Euclidean distance works best with **independent features**
+- when features are correlated (move together), distance becomes distorted, because it calculates distances from correl
 Using PCA fixes this.
 
