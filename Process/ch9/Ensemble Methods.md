@@ -61,10 +61,8 @@ This graph shows the error of the ensemble when we combine many base classifers 
 ## Ensemble Methods
 - [Voting](#voting) : Majority vote : **>= 1 base classifiers**
 - [Stacking](#stacking) : **>= 1 base classifiers**
-- Bagging : **1 base classifier**
-- Random forest
+- [Bagging](#bagging) : **1 base classifier**
 - [Boosting (Adaboost)](#boosting) : **1 base classifier**
-- Gradient boosting tree
 - Multi-class to binary classification
 
 ### Voting
@@ -94,6 +92,8 @@ Instead of learning from original features, it learns from **which base model to
 ![[Pasted image 20251206160234.png]]
 - Those confidence values **come directly from each base classifier**
 Rule model example : **if base_confidence_yes0 <= 0.229, then predict no**
+### Bagging
+
 ### Boosting
 ---
 - Training **n base classifiers** of the same type
