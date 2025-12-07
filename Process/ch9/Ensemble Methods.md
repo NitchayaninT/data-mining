@@ -197,3 +197,6 @@ In many cases, their performance are similar
 - Bagging & Boosting : are useful when the classification is susceptible to **data variation**
 	- Base classifiers are trained from **different subsets of data** (different focus yields different bias) -> data variation is **neutralized by ensemble decision**
 	- Boosting can handle hard-to-predict data & thus correct mistakes by previous base classifiers. but the model is more likely to be overfitting
+	- This ensures each base model sees a slightly different version of the training data, deliberately introducing **variation** and **preventing any single model from overfitting to one specific data pattern.**
+	- By averaging the predictions of many independently trained, overfitted trees, **the high variance is canceled out**, leading to a stable and generalizable result.
+	- But when there is
