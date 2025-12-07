@@ -65,6 +65,7 @@ It measures **how much Y changes when X changes**, based on your data.
 
 - **Correlation**
 	- **strength and direction of a linear relationship** between **two variables** (only consider 2 features at a time)
+	- How strongly _two_ variables move together (DIRECTION of the 2 lines)
 	- Multiple correlation **between all attributes and Y** (0<=**r**<=1)
 		- r = +1 means perfect positive linear relationship
 		- r = 0 means no linear relationship

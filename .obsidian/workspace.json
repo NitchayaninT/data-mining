@@ -35,7 +35,8 @@
               "title": "Clustering"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Process/ch8/Regression.md",
+                "file": "Process/ch10/Clustering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,7 +174,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Regression"
+              "title": "Backlinks for Clustering"
             }
           }
         ],
@@ -196,10 +197,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c4a2fff6c55b868c",
+  "active": "fe5e2e6df4080634",
   "lastOpenFiles": [
-    "Process/ch10/Clustering.md",
     "Process/ch8/Regression.md",
+    "Process/ch10/Clustering.md",
     "pictures/Pasted image 20251206124658.png",
     "README.md",
     "Untitled.canvas",
