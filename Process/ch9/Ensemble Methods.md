@@ -199,4 +199,5 @@ In many cases, their performance are similar
 	- Boosting can handle hard-to-predict data & thus correct mistakes by previous base classifiers. but the model is more likely to be overfitting
 	- This ensures each base model sees a slightly different version of the training data, deliberately introducing **variation** and **preventing any single model from overfitting to one specific data pattern.**
 	- By averaging the predictions of many independently trained, overfitted trees, **the high variance is canceled out**, leading to a stable and generalizable result.
-	- But when there is
+	- But when there is a little variation on the data, these may not help
+		- because it will end up with the same classifiers

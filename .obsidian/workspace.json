@@ -11,17 +11,30 @@
             "id": "c4a2fff6c55b868c",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "pictures/Pasted image 20251206124658.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20251206124658"
+            }
+          },
+          {
+            "id": "fe5e2e6df4080634",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Process/ch9/Ensemble Methods.md",
+                "file": "Process/ch10/Clustering.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ensemble Methods"
+              "title": "Clustering"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -79,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e3d67f66f144d629",
@@ -150,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Process/ch9/Ensemble Methods.md",
+                "file": "Process/ch10/Clustering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +172,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Ensemble Methods"
+              "title": "Backlinks for Clustering"
             }
           }
         ],
@@ -183,27 +195,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c4a2fff6c55b868c",
+  "active": "fe5e2e6df4080634",
   "lastOpenFiles": [
-    "Pasted image 20251207144959.png",
-    "Pasted image 20251207140524.png",
-    "Pasted image 20251207140158.png",
-    "Pasted image 20251206160234.png",
+    "pictures/Pasted image 20251206124658.png",
+    "Process/ch10/Clustering.md",
+    "Process/ch10",
+    "Process/ch9/Ensemble Methods.md",
+    "pictures/Pasted image 20251207144959.png",
+    "pictures/Pasted image 20251207140524.png",
+    "pictures/Pasted image 20251207140158.png",
+    "pictures/Pasted image 20251206160234.png",
     "Process/ch8/Regression.md",
-    "Pasted image 20251206124658.png",
     "Process/ch13/Association Analysis.md",
     "Process/ch13",
     "Process/ch3/Data Preprocessing.md",
     "pictures/naive-with-laplace.png",
     "Process/ch5/Classification Methods 2.md",
-    "Process/ch9/Ensemble Methods.md",
     "pictures/laplace-correction.png",
     "Untitled.canvas",
     "Process/ch7/Performance Evaluation.md",
     "pictures/sensitivity.png",
     "pictures/profit-matrix.png",
     "pictures/penaltymatrix.png",
-    "pictures/overallaccuary.png",
     "Process/ex4/E425_ex4.pdf",
     "Process/ex4/E425_ex4.docx",
     "Process/ex4",
@@ -217,7 +230,6 @@
     "Process/ch6/Ex 6.3 (SVM with linear data).rmp",
     "Process/ch6/data/SVM_nonlinear.csv",
     "Process/ch6/data/SVM_linear.csv",
-    "Process/ch6/data/IrisFromWeka.rmhdf5table",
     "Process/ch3.md"
   ]
 }
