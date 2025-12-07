@@ -9,3 +9,10 @@
 - ### [Artificial Neural Network (ANN) and Support Vector Machine (SVM)](./Process/ch6/Neural%20Network,%20SVM.md)
 - ### [Regression](./Process/ch8/Regression.md)
 ## - [Performance Evaluation](./Process/ch7/Performance%20Evaluation.md)
+
+## - [Regression](./Process/ch8/Regression.md)
+## - [Ensemble Methods](./Process/ch9/Ensemble%20Methods.md)
+## -Clustering
+- ### [Clustering 1](./Process/ch10/Clustering%201.md)
+- ### Clustering 2
+- ### Outliers
