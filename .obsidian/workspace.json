@@ -11,12 +11,14 @@
             "id": "c4a2fff6c55b868c",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "pictures/Pasted image 20251206124658.png"
+                "file": "Process/ch8/Regression.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251206124658"
+              "icon": "lucide-file",
+              "title": "Regression"
             }
           },
           {
@@ -33,8 +35,7 @@
               "title": "Clustering"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -162,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Process/ch10/Clustering.md",
+                "file": "Process/ch8/Regression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -172,7 +173,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Clustering"
+              "title": "Backlinks for Regression"
             }
           }
         ],
@@ -195,19 +196,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fe5e2e6df4080634",
+  "active": "c4a2fff6c55b868c",
   "lastOpenFiles": [
+    "Process/ch10/Clustering.md",
+    "Process/ch8/Regression.md",
+    "pictures/Pasted image 20251206124658.png",
     "README.md",
     "Untitled.canvas",
-    "Process/ch10/Clustering.md",
-    "pictures/Pasted image 20251206124658.png",
     "Process/ch10",
     "Process/ch9/Ensemble Methods.md",
     "pictures/Pasted image 20251207144959.png",
     "pictures/Pasted image 20251207140524.png",
     "pictures/Pasted image 20251207140158.png",
     "pictures/Pasted image 20251206160234.png",
-    "Process/ch8/Regression.md",
     "Process/ch13/Association Analysis.md",
     "Process/ch13",
     "Process/ch3/Data Preprocessing.md",

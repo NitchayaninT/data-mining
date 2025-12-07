@@ -12,4 +12,4 @@
 ### Normalization
 - distance-based
 ### PCA
-PCA, **reduces the number of dimensions in large datasets** to principal components that retain most of the original information. It does this by transforming potentially correlated variables into a smaller set of variables, called principal components.
+PCA (Principal Component Analysis) is a **dimensionality reduction technique** and helps us to **reduce the number of features in a dataset** while **keeping the most important information.** It changes complex datasets by transforming correlated features into a **smaller set of uncorrelated components.**
