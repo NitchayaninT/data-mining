@@ -9,3 +9,7 @@
 	- Clustering steps, likelihood, log-likelihood
 - **Gaussian Mixture**
 ## Preprocessing
+### Normalization
+- distance-based
+### PCA
+PCA, **reduces the number of dimensions in large datasets** to principal components that retain most of the original information. It does this by transforming potentially correlated variables into a smaller set of variables, called principal components.
