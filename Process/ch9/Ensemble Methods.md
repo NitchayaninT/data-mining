@@ -108,7 +108,10 @@ Sampling with replacement : some records are chosen at many times/some not at al
 ![[Pasted image 20251207140158.png]]
 ![[Pasted image 20251207140524.png]]
 
-
+Prediction by base classifiers
+- Final decision = **majority vote**
+- **Combine the predictions** of 0.1-1 from all base classifiers and cast a vote. Vote + if these base classifiers predict more + than -, vice versa
+- Then, find the **accuracy** : compare the voting results with actual data, how many did our voting predicted correctly? (**correct/no. of data**)
 ### Boosting
 ---
 - Training **n base classifiers** of the same type
