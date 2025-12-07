@@ -96,11 +96,11 @@ Rule model example : **if base_confidence_yes0 <= 0.229, then predict no**
 Manipulate training data, training n base classifiers of the **same type**
 For each **base classifier training**
 **bootstraping** = used to create diverse samples,  it generates different subsets of the training data set.
-1. Create training data or bootstrap by **sampling with replacement**
+1. Create training data or bootstrap by **sampling with replacement** (at random)
 2. Use training data to train base classifier
 **Final prediction** : by majority vote (or avg prediction confidence) from n base classifiers
 **Sampling with replacement** : 
-- **Some records are chosen many times** while some are never chosen
+- **Some records are chosen many times** while some are never chosen (cuz bootstrap sampling is random)
 - On average, each bootstrap contains about 63% of original data (according to probability calculation)
 ### Boosting
 ---
