@@ -13,6 +13,6 @@
 ## - [Regression](./Process/ch8/Regression.md)
 ## - [Ensemble Methods](./Process/ch9/Ensemble%20Methods.md)
 ## -Clustering
-- ### [Clustering 1](./Process/ch10/Clustering%201.md)
-- ### Clustering 2
+- ### [Clustering](DataMining/Process/ch10/Clustering.md)
+- ### [Clustering 2](DataMining/Process/ch11/Clustering.md)
 - ### Outliers

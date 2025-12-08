@@ -1,4 +1,4 @@
-# Ensemble Methods
+# ==Ensemble Methods==
 - **Individual vs Ensemble classifiers**
 - **Ensemble methods**
 	- Voting, Stacking
@@ -65,11 +65,11 @@ This graph shows the error of the ensemble when we combine many base classifers 
 - [Boosting (Adaboost)](#boosting) : **1 base classifier**
 - [Multi-class handling](#multi-class-handling): 1-against-1, 1-against-all
 
-### Voting
+### ==Voting==
 Train & test different classifiers (recommended to be odd), get performance
 Final prediction is based on majority vote
 - Every model has the same weights, it just uses majority vote for each prediction
-### Stacking
+### ==Stacking==
 Splits data into 2 partitions
 **Stacking** tries to **learn how to combine multiple models** (base classifiers) in a smart way
 - **Base training**
@@ -92,7 +92,7 @@ Instead of learning from original features, it learns from **which base model to
 ![[Pasted image 20251206160234.png]]
 - Those confidence values **come directly from each base classifier**
 Rule model example : **if base_confidence_yes0 <= 0.229, then predict no**
-### Bagging
+### ==Bagging==
 Manipulate training data, training n base classifiers of the **same type**
 For each **base classifier training**
 **bootstraping** = used to create diverse samples,  it generates different subsets of the training data set.
@@ -112,7 +112,7 @@ Prediction by base classifiers
 - Final decision = **majority vote**
 - **Combine the predictions** of 0.1-1 from all base classifiers and cast a vote. Vote + if these base classifiers predict more + than -, vice versa
 - Then, find the **accuracy** : compare the voting results with actual data, how many did our voting predicted correctly? (**correct/no. of data**)
-### Boosting
+### ==Boosting==
 ---
 - Training **n base classifiers** of the same type
 - Let all training records **have equal weights** (initial state)
@@ -164,7 +164,7 @@ Prediction by base classifiers
 **x = 0.4** -> y = -0.4236-0.6625+0.7315 -> **class -**
 **x = 0.8** -> y = -0.4236+0.6625+0.7315 -> **class +**
 
-### Multi-class handling
+### ==Multi-class handling==
 From multi-class -> binary classification
 **Why use binary instead** ? : some methods only support binary classification (SVM, Logistic regress), class imbalance (some class has more members), classifying too many classes can lead to poor accuracy
 - **1-against-1**
@@ -184,7 +184,7 @@ Train binary classifier to predict **whether records belong to a class or the ot
 - Eg : **predictions = (C1, others, others, others)**
 ![[Pasted image 20251207144959.png]]
 - Using majority vote, final prediction = C1, or choose class with highest prediction confidence
-### Comparison
+### ==Comparison==
 In many cases, their performance are similar
 - One against one **requires n(n-1)/2 classifiers** for n classes
 	- Training is more computationally expensive

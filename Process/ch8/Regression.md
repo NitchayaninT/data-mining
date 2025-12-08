@@ -1,4 +1,4 @@
-# Regression
+# ==Regression==
 - **Numeric Prediction**
 	- **Linear Regression**
 	- **Extensions of Classification methods**
@@ -8,7 +8,7 @@
 	- Evaluation metrics
 - **Classification**
 	- **Logistic Regression**
-## Linear Regression
+## ==Linear Regression==
 - Goal : find best coefficients b0, b1, ..., bm that **minimize the error between predicted and actual y**
 - Consider multiple predictors or **attributes** A1, A2, ..., Am
 - **Regression model** is `y = b0 + b1A1 + b2A2 + ... + bmAm`
@@ -44,7 +44,7 @@ It measures **how much Y changes when X changes**, based on your data.
 - **Tolerance** = indicates **collinearity** between each attribute and the others
 	- Should be close to 1
 	- Tolerance < 0.2 -> that attribute has **severe collinearity with some others**
-### Evaluating Regression Performance
+### ==Evaluating Regression Performance==
 - **Prediction error** `ei = yi - yi hat`
 	- **Root of mean squared error (RMSE)**
 		- Average error
@@ -86,15 +86,15 @@ It measures **how much Y changes when X changes**, based on your data.
 ![[Pasted image 20251113001930.png]]
 
 - We use feature selection to **eliminate features with collinearity**
-## Extensions of Classification Methods
+## ==Extensions of Classification Methods==
 - [CART](#cart)
 - [SVR](#svr-:-support-vector-regression)
-### CART
-**Classification and Regression Tree**
+### ==CART==
+==**Classification and Regression Tree**==
 CART outputs a decision tree where **leaf nodes are either classes** (classification) OR **numeric values** (regression), depending on the type of target variable Y
 
 When target variable Y is numeric, CART builds a tree that **splits the dataset into regions** so that **each region contains data with similar Y values**
-- **Least-square error splitting criterion**
+- ==Least-square error splitting criterion==
 	- how CART decides where to split the data (at X > 10, X > 12, etc)
 	- for each possible split (feature + split value), CART calculates 
 		- **SSE = (y-y hat)squared**, where y hat is the prediction for that region
@@ -111,7 +111,7 @@ When target variable Y is numeric, CART builds a tree that **splits the dataset 
 		- **"Mean of all yi in that leaf"**
 	- **Why average?** : Because for regression, the value that minimizes squared error for a set of data points is the **mean**.
 	- Every new data point that falls into this leaf is predicted as the mean of yi in that leaf
-### SVR : Support Vector Regression
+### ==SVR : Support Vector Regression==
 Linear regress : fit Y = f(X) that minimizes squared error
 SVR = **fit a hyperplane** that keeps points **within** an acceptable margin **ε**
 
@@ -138,7 +138,7 @@ Instead of fitting the model in the original input space, SVR:
 2. Fits a linear SVR **in that high-dimensional space**
 3. That linear model corresponds to a **nonlinear curve** in the original space.
 
-**SVR vs SVM**
+==**SVR vs SVM**==
 - SVR (regression)
 	- ε-tube defines the region where error is ignored
 	- Kernel : creates a curved _regression function_

@@ -8,7 +8,7 @@
 	- Mixture models & assumption
 	- Clustering steps, likelihood, log-likelihood
 - **Gaussian Mixture**
-## Preprocessing
+## ==Preprocessing==
 ### Normalization
 - distance-based
 - PCA works by analyzing variance, Features with large numeric scales dominate PCA, so need to do normalization before PCA
@@ -54,7 +54,7 @@ But PCA table **does not contain the original attributes anymore**, so we have t
 - Compare **each object with all cluster centroids** and assign the object to the cloest one -> using similarity or **distance function**
 - Cluster shape = **globular**, with centroid at the middle
 - Clustering methods = **K-means, K-medoids**
-## K-Means  
+## ==K-Means==  
 - Find K-clusters that are represented by centroids
 **Process**
 - Select K data points (in RANDOM) as initial centroids
@@ -92,7 +92,7 @@ But PCA table **does not contain the original attributes anymore**, so we have t
 ### Performance (SSE vs DBI)
 - **SSE** : measure**s if data points are more compacted with the cluster** (low SSE), closer to centroid
 - **DBI** : A ratio of **cluster compactness** and **cluster separation** (ideal : nominator low, denominator high). Its used to balance tight clusters and well-seperated clusters
-## K-Medoids
+## ==K-Medoids==
 Calculate average distance **from each point to all other points within the cluster**
 **New centroid** = point with min avg distance 
 Centroid is the **best actual point** in the cluster
@@ -145,8 +145,8 @@ A cluster of objects is assumed to be drawn from a certain population. So it is 
 - Each object is assigned to the **most likely cluster**
 - Clusters can have any shape, any density
 - **Clustering methods** : EM, Gaussian Mixture
-## Expectation-Maximization (EM)
-**Cluster model** = normal distribution (mean & variance)
+## ==Expectation-Maximization (EM) & GMM==
+**Cluster model (GMM)** = normal distribution (mean & variance)
 - Each cluster is assumed to be the representative of each population
 - Each population has **normal probability distribution** or data model with **μ** and **𝜎2** parameters
 - Consider 2 clusters A,B = **models ->  N(μA ,𝜎2A) and N(μB ,𝜎2B)** 
@@ -161,11 +161,16 @@ This is why EM/GMM clusters sometimes look like ellipses, not circles.
 ### Likelihood
 P(x|A) is calculated from a **normal distribution function**
 ![[Pasted image 20251208004206.png]]
-- Total likelihood of x = **P(x|A)P(A) + P(x|B)P(B)** -> equal to 1
-If x is in the correct cluster, likelihood should be high, because if its in cluster A, the contribution to P(A) is high, so it dominates whats added in B term, so P(A|x) is closer to 1
+- Total likelihood of x = **P(x|A)P(A) + P(x|B)P(B)** 
+**If x is in the correct cluster, likelihood should be high**, because if its in cluster A, the contribution to P(A) is high, so it dominates whats added in B term (x is near A's mean)
+- if x is not near A's nor B's mean, P(x∣A) and P(x∣B) are **not high** = low likelihood
+- When **normalized**, the likelihoods of x sum to 1
 ### Performance = log-likelihood
 maximize
-**Total likelihood** = the likelihoods of all points multiplied together. Log function is applied to make the calculation faster
+**Total likelihood** (likelihood of independent events) = the **likelihoods of all points multiplied together**. Log function is applied to make the calculation faster because the multiplication of all likelihood tends to be a bunch of decimal points
+- How well does the **mixture model explain ALL the data?**
+	- If every point has high density under the model → big likelihood.  
+	- If some points fall in low-density regions → small likelihood.
 ### EM steps
 Random initial  **μ and 𝜎** for K clustering models
 For each cycle
@@ -176,5 +181,15 @@ For each cycle
 - Calculate log-likelihood for all points
 Until stopping criteria (eg. parameters or log-likelihood is stable)
 
+![[Pasted image 20251208122421.png]]
+Score = inverted likelihood = tend to be outlier of cluster 0, far from gaussian center
+### Choosing K
 **Choosing K** = log-likelihood + reverse of elbow
-
+- Log-likelihood ALWAYS **increases as K increases**
+- Always goes up, becomes less steep (improvement small)→ looks like a **reverse elbow**.
+This is guaranteed because:
+- More clusters = more parameters
+- More parameters = more flexibility
+- More flexibility = better fit
+- **Better fit = higher log-likelihood**
+Choose K that : is near the reverse elbow AND has the highest BIC, BIC adds a penalty for having too many clusters (balances better fit VS complexity), so BIC chooses the **simplest model that still explains the data well.**
