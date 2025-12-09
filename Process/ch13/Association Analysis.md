@@ -27,7 +27,7 @@ We see that a customer has bought beer & bread, it is likely that she will also 
 - Shorter words : interested in both agree & disagree
 
 ## Support & Confidence
-**Support or coverage**
+==**Support or coverage**==
 - Fraction of transactions containing itemset(s), for example
 	- Support({beer}) = 1/3
 	- Suppoer({bread} U {coke}) = 2/3
@@ -39,7 +39,7 @@ Given an association rule **A->B**
 - **Confidence(A->B)** = support(A U B) / support(A) = **P(B | A)**
 	- Prob of B given A, Prob that B appears in transactions containing item A
 
-Goal of association analysis = **find strong association rules**
+Goal of association analysis = ==**find strong association rules**==
 - support(A->B) >= minSupport
 - confidence(A->B) = minConfidence
 Rules with **too low support** = may occur by chance & are likely to be uninteresting 
@@ -107,13 +107,14 @@ Do the same for the rest, **Consider suffix C's and A's prefix paths**
 - Confidence
 - Lift
 ### Lift
-Lift tells you how much more likely the conclusion happens _when the premise happens_, compared to random chance.
+Lift tells how much more likely the conclusion happens _when the premise happens_, compared to random chance.
 It measures **how strong the relationship** is between items.
 - Independent items VS confidence
 - From confidence (A->B) = P(B | A) = P(A AND B) / P(A)
 - If A and B are *independent*, then P(A AND B) = P(A) x P(B)
 - **Lift (A->B) = confidence (A->B)/support(B)**
 			**= P(A AND B) / (P(A) x P(B))**
-	- Lift(A->B) < 1 implies negative association
-	- Lift(A->B) = 1 implies no association (independent). example : Eating omelette does NOT change the chance of choosing muesli yogurt, they're independent, like flipping a coin
-	- Lift(A->B) > 1 implies positive association, conclusion **happens more often with the premise** than in general
+	- Lift(A->B) < 1 implies ==negative association==. can be interpreted as negating(~) one side of the rule. eg : customers buy either item
+	- Lift(A->B) = 1 implies ==no association (independent)==. example : Eating omelette does NOT change the chance of choosing muesli yogurt, they're independent, like flipping a coin
+	- Lift(A->B) > 1 implies ==positive association==, conclusion **happens more often with the premise** than in general. indicates that premise and conclusion occur together -> eg. customer buy both items
+
