@@ -1,4 +1,4 @@
-# ==Ensemble Methods==
+ # ==Ensemble Methods==
 - **Individual vs Ensemble classifiers**
 - **Ensemble methods**
 	- Voting, Stacking
